@@ -1,3 +1,103 @@
-// Place all the styles related to the Main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//HEADER STYLING-----------------------
+
+#header{
+	width: 100%;
+}
+
+#logo-area{
+	height: 100px;
+	width: 15%;
+	display: inline-block;	
+}
+
+#nav-area{
+	height: 100px;
+	width: 50%;
+	display: inline-block;
+	padding-top: 20px;
+	margin-left: 10%;
+}
+
+#link{
+	font-size: 18px;
+	background-color: white;
+	color: black;
+}
+
+// //BODY STYLING--------------------------
+
+#main{
+}
+
+#socialmedia-area{
+	height: 600px;
+	width: 15%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.btn-group-vertical{
+	margin-top: 35%;
+	width: 30%;
+}
+
+.btn-group-vertical button{
+	height: 60px;
+}
+
+#smlink{
+	border-radius: 0px;
+	// background: url('app/assets/images/GitHub-Mark-32px.png');
+}
+
+.githublink, .githublink:hover{
+	background-color: #4d4d4d;
+	border-color: #4d4d4d;
+}
+
+.twitterlink, .twitterlink:hover{
+	background-color: #1ebff0;
+	border-color: #1ebff0;
+}
+
+.facebooklink, .facebooklink:hover{
+	background-color: #3b5998;
+	border-color: #3b5998;
+}
+
+.googleplaylink, .googleplaylink:hover{
+	background-color: #f7f7f7;
+	border-color: #f7f7f7;
+}
+
+#info-area{
+	height: 600px;
+	width: 84%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+#info{
+	width: 70%;
+	height: 60%;
+	margin-left: 6.7%;
+	margin-top: 6%;
+	text-align: center;
+}
+
+#name{
+	height: 70%;
+	font-size: 140px;
+}
+
+#description{
+	height: 30%;
+	font-size: 25px;
+}
+
+pre{
+	background-color: white;
+	border: none;
+	font-size: 18px;
+}
+
