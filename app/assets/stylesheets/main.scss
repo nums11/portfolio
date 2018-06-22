@@ -18,11 +18,12 @@
 	margin-left: 10%;
 }
 
-#link{
+.link, .link:hover{
 	font-size: 18px;
-	background-color: white;
+	background-color: white !important;
 	color: black;
 }
+
 
 // //BODY STYLING--------------------------
 
@@ -38,36 +39,40 @@
 
 .btn-group-vertical{
 	margin-top: 35%;
-	width: 30%;
+	width: 50%;
 }
 
 .btn-group-vertical button{
 	height: 60px;
 }
 
-#smlink{
-	border-radius: 0px;
+.smlink{
+	border-radius: 0px !important;
 	// background: url('app/assets/images/GitHub-Mark-32px.png');
 }
 
-.githublink, .githublink:hover{
+#githublink, #githublink:hover{
 	background-color: #4d4d4d;
 	border-color: #4d4d4d;
+	width: 60%;
 }
 
-.twitterlink, .twitterlink:hover{
+#twitterlink, #twitterlink:hover{
 	background-color: #1ebff0;
 	border-color: #1ebff0;
+	width: 60%;
 }
 
-.facebooklink, .facebooklink:hover{
+#facebooklink, #facebooklink:hover{
 	background-color: #3b5998;
 	border-color: #3b5998;
+	width: 60%;
 }
 
-.googleplaylink, .googleplaylink:hover{
+#googleplaylink, #googleplaylink:hover{
 	background-color: #f7f7f7;
 	border-color: #f7f7f7;
+	width: 60%;
 }
 
 #info-area{

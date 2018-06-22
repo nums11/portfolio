@@ -7,10 +7,10 @@
 	<div id="nav-area">
 		
 		<ul class="nav nav-pills nav-justified">
-  			<li><a href="#" id="link">About</a></li>
-  			<li><a href="#" id="link">Projects</a></li>
-  			<li><a href="#" id="link">Contact</a></li>
-  			<li><a href="#" id="link">Resume</a></li>
+  			<li><a href="#" class="link">About</a></li>
+  			<li><a href="#" class="link">Projects</a></li>
+  			<li><a href="#" class="link">Contact</a></li>
+  			<li><a href="#" class="link">Resume</a></li>
 		</ul>
 
 	</div>
@@ -24,16 +24,16 @@
 	<div id="socialmedia-area">
 		
  		<div class="btn-group-vertical">
-  			<button type="button" class="btn btn-primary githublink" id="smlink">
+  			<button type="button" class="btn btn-primary smlink" id="githublink">
  				<%= image_tag("GitHub-Mark-Light-32px.png") %>
   			</button>
-  			<button type="button" class="btn btn-primary twitterlink" id="smlink">
+  			<button type="button" class="btn btn-primary smlink" id="twitterlink">
   				<%= image_tag("if_twitter_291710.png") %>
   			</button>
-  			<button type="button" class="btn btn-primary facebooklink" id="smlink">
+  			<button type="button" class="btn btn-primary smlink" id="facebooklink">
   				<%= image_tag("if_facebook_386622 (1).png") %>
   			</button>
-  			<button type="button" class="btn btn-primary googleplaylink" id="smlink">
+  			<button type="button" class="btn btn-primary smlink" id="googleplaylink">
   				<%= image_tag("if_playstore_252084.png") %>
   			</button>
 		</div> 
@@ -53,3 +53,26 @@
 
 </div>
 
+<!-- JAVASCRIPT ------------------------------->
+
+<script type="text/javascript">
+
+	//Navigation links
+	$(".link").mouseenter(function(){
+		$(this).animate({"color": "#4dff88"}, 250);
+
+  	});
+
+	$(".link").mouseleave(function(){
+		$(this).animate({"color": "black"}, 250);
+	});
+
+	//Social Media Linls
+	$(".smlink").mouseenter(function(){
+		$(this).animate({"width":"100%"}, 250);
+	});
+
+	$(".smlink").mouseleave(function(){
+		$(this).animate({"width":"60%"}, 250);
+	});
+</script>
