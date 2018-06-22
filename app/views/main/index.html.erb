@@ -43,7 +43,9 @@
  	<div id="info-area">
  		
  		<div id="info">
- 			<div id="name">Numfor Tiapo</div>
+ 			<div id="name">
+ 				<span class="letter">N</span><span class="letter">u</span><span class="letter">m</span><span class="letter">f</span><span class="letter">o</span><span class="letter">r</span> <span class="letter">T</span><span class="letter">i</span><span class="letter">a</span><span class="letter">p</span><span class="letter">o</span>
+ 			</div>
  			<div id="description">
  				<pre>&lt;p&gt;I am a passionate web and mobile app developer.&lt;/p&gt;</pre>
  			</div>
@@ -74,5 +76,14 @@
 
 	$(".smlink").mouseleave(function(){
 		$(this).animate({"width":"60%"}, 250);
+	});
+
+	//Name animations
+	$(".letter").mouseenter(function(){
+		$(this).animate({"font-size":"150px"}, 250);
+	});
+
+	$(".letter").mouseleave(function(){
+		$(this).animate({"font-size":"140px"}, 250);
 	});
 </script>
