@@ -1,7 +1,10 @@
+/*Title Section---------------------------------------*/
+
 //HEADER STYLING-----------------------
 
 #header{
 	width: 100%;
+	height: 14%;
 }
 
 #logo-area{
@@ -28,6 +31,7 @@
 // //BODY STYLING--------------------------
 
 #main{
+	height: 77%;
 }
 
 #socialmedia-area{
@@ -106,3 +110,66 @@ pre{
 	font-size: 18px;
 }
 
+
+/*About Section----------------------------------*/
+
+#aboutsection-container{
+	// border: green solid;
+	background: linear-gradient(to bottom right,#ffb3b3, #ff0000);
+	height: 700px;
+	border: none;
+	padding-top: 1%;
+	// background: linear-gradient(to bottom right,#ffffff, #cccccc);
+}
+
+#aboutsection-main{
+	margin: auto;
+	height: 95%;
+	width: 95%;
+	margin-top: 1%;
+	text-align: center;
+	color: white;
+}
+
+#aboutsection-info{
+	height: 100%;
+	width: 49%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+#aboutsection-greeting{
+	height: 20%;
+	font-size: 40px;
+	margin-top: 20%;
+}
+
+#aboutsection-description{
+	height: 20%;
+	font-size: 20px;
+	margin: auto;
+	width: 60%;
+}
+
+#tagcloud{
+	height: 100%;
+	width: 50%;
+	font-size: 20px;
+	margin: auto;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.skilltag, .skilltag:hover{
+	font-size: 35px !important;
+	color: #4dff88 !important;
+	border: none !important;
+	cursor: pointer !important;
+}
+
+/*Project Section-----------------------------------*/
+
+#projectsection-container{
+	height: 500px;
+	border: orange solid;
+}
