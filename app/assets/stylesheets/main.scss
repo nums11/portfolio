@@ -118,15 +118,13 @@ pre{
 	background: linear-gradient(to bottom right,#ffb3b3, #ff0000);
 	height: 700px;
 	border: none;
-	padding-top: 1%;
 	// background: linear-gradient(to bottom right,#ffffff, #cccccc);
 }
 
 #aboutsection-main{
 	margin: auto;
-	height: 95%;
-	width: 95%;
-	margin-top: 1%;
+	height: 100%;
+	width: 99%;
 	text-align: center;
 	color: white;
 }
@@ -135,13 +133,13 @@ pre{
 	height: 100%;
 	width: 49%;
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 #aboutsection-greeting{
 	height: 20%;
 	font-size: 40px;
-	margin-top: 20%;
+	margin-top: 25%;
 }
 
 #aboutsection-description{
@@ -157,7 +155,9 @@ pre{
 	font-size: 20px;
 	margin: auto;
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
+	background:none;
+	z-index: 1;
 }
 
 .skilltag, .skilltag:hover{
@@ -167,9 +167,244 @@ pre{
 	cursor: pointer !important;
 }
 
-/*Project Section-----------------------------------*/
+/*Portfolio Section-----------------------------------*/
 
-#projectsection-container{
-	height: 500px;
-	border: orange solid;
+#portfoliosection-container{
+	height: 800px;
+	padding-top: 3%;
+	// background: linear-gradient(to bottom right,#e6ffff, #80ffff);
+	color: #ff4d4d;
+}
+
+#portfoliosection-main{
+	height: 90%;
+	width: 85%;
+	margin: auto;
+	text-align: center;
+}	
+
+#portfoliosection-greeting{
+	height: 10%;
+	font-size: 40px;
+	color: black;
+}
+
+#underline{
+	height: 5px;
+	width: 100px;
+	margin: auto;
+	border: black solid;
+}
+
+#projects{
+	width: 100%;
+	height: 45%;
+	display: inline-block;
+	margin-top: 5%;
+}
+
+.project{
+	margin: auto;
+	width: 40%;	
+	height: 93%;
+}
+
+#project-name{
+	text-align: center;
+	height: 20%;
+}
+
+#coming-soon{
+	height: 25%;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 8%;
+}
+
+#focus-container{
+}
+
+.projectpicture{
+	height: 34%;
+	width: 33.7%;
+	position: absolute;
+}
+
+.projectcover{
+	background-color: #737373;
+	opacity: 0.0;
+	height: 34%;
+	width: 33.7%;
+	position: absolute;
+	color: white;
+}
+
+.project-name{
+	font-size: 30px;
+	margin-top: 8%;
+}
+
+.learn-more{
+	margin: auto;
+	margin-top: 10%;
+	font-size: 30px;
+	border: #4dff88 solid;
+	width: 40%;
+	cursor: pointer
+}
+
+.view-site{
+	margin: auto;
+	margin-top: 10%;
+	color: black;
+	width: 50%;
+	border: #4dff88 solid;
+	background-color: #4dff88;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.projectinfo-container{
+	height: 72%;
+	width: 50%;
+	position: absolute;
+	margin-left: 25%;
+	z-index: 2;
+	background-color: white;
+	border: grey solid thin;
+	display: none;
+	position: fixed;
+	margin-top: 5%;
+}
+
+.project-info{
+	height: 100%;
+	width: 59%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.project-info h1{
+	text-align: center;
+	color: black;
+}
+
+.project-info p{
+	text-align: center; 
+	color: black;
+	margin: auto;
+	margin-top: 10%;
+	font-size: 18px;
+	width: 80%;
+}
+
+.list-group{
+	text-align: center;
+	width: 75%;
+	margin: auto;
+	color: red;
+}
+
+#focus-carousel{
+	height: 100%;
+	width: 40%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.carousel-pic{
+	height: 100%;
+	width: 100%;
+}
+
+#page-cover{
+	z-index: 2;
+	// background-color: #e6e6e6;
+	background-color: black;
+	opacity: 0.4;
+	position: fixed;
+	display: none;
+}
+
+/*Contact Section-----------------------------------*/
+
+#contactsection-container{
+	padding-top: 5px;
+	height: 800px;
+	background: linear-gradient(to bottom right,#595959, #262626);
+}
+
+#forms-container{
+	height: 85%;
+	width: 30%;
+	margin: auto;
+	color: white;
+}
+
+#contact-header{
+	height: 12%;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	margin-top: 40px;
+}
+
+#contact-underline{
+	height: 5px;
+	width: 100px;
+	margin: auto;
+	border: white solid;
+}
+
+#contact-name-email{
+	height: 10%;
+	margin-top: 8%;
+	padding: 5px 0px 5px 0px;
+}
+
+.contact-info{
+	border: #808080 solid;
+	height: 100%;
+	width: 49.5%;
+	display: inline-block;
+	margin: auto;
+	vertical-align: bottom;
+	padding-left: 8px;
+	font-size: 18px;
+	background-color: #808080;
+}
+
+::placeholder{
+	color: white;
+}
+
+#message-area{
+	height: 45%;
+	border: #808080 solid;
+	background-color: #808080;
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	resize: none;
+}
+
+#submit-btn{
+	margin: auto;
+	margin-top: 2%;
+	width: 50%;
+	border: #4dff88 solid;
+	background-color: #404040;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }

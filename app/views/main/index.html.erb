@@ -1,3 +1,70 @@
+<!-- Page cover to blur background on project popups -->
+<div id="page-cover"></div>
+
+<!-- PROJECT POPUPS -->
+
+	<!-- Focus project popup -->
+
+	<div class="projectinfo-container" id="focus-popup">
+
+		<!-- Image Carousel -->
+		<div id="focus-carousel" class="carousel slide" data-ride="carousel">
+  			<!-- Indicators -->
+  			<ol class="carousel-indicators">
+  			  <li data-target="#focus-carousel" data-slide-to="0" class="			active"></li>
+  			  <li data-target="#focus-carousel" data-slide-to="1"></li>
+  			  <li data-target="#focus-carousel" data-slide-to="2"></li>
+  			  <li data-target="#focus-carousel" data-slide-to="3"></li>
+  			</ol>
+			
+  			<!-- Wrapper for slides -->
+  			<div class="carousel-inner">
+  			  <div class="item active">
+  			    <%= image_tag ("focus_pic1.png"), :class => "carousel-pic" %>
+  			  </div>
+			
+  			  <div class="item">
+  			    <%= image_tag ("focus_pic2.png"), :class => "carousel-pic" %>
+  			  </div>
+			
+  			  <div class="item">
+  			    <%= image_tag ("focus_pic3.png"), :class => "carousel-pic" %>
+  			  </div>
+
+  			  <div class="item">
+  			    <%= image_tag ("focus_pic4.png"), :class => "carousel-pic" %>
+  			  </div>
+  			</div>
+			
+  			<!-- Left and right controls -->
+  			<a class="left carousel-control" href="#focus-carousel" data-slide			="prev">
+  			  <span class="glyphicon glyphicon-chevron-left"></span>
+  			  <span class="sr-only">Previous</span>
+  			</a>
+  			<a class="right carousel-control" href="#focus-carousel" 			data-slide="next">
+  			  <span class="glyphicon glyphicon-chevron-right"></span>
+  			  <span class="sr-only">Next</span>
+  			</a>
+		</div>
+
+		<div class="project-info" id="focus-info">
+			
+			<h1>Focus</h1>
+			<ul class="list-group">
+			  <li class="list-group-item">Android Studio</li>
+			  <li class="list-group-item">Java</li>
+			  <li class="list-group-item">SQL</li>
+			</ul>
+			<p>Focus is an exciting, color-based arcade game built using the Android Studio framework and released
+through the Google Play Store. Focus uses a self-designed, dynamic algorithm that changes the
+speed and difficulty of the game as the user improves. It has a 5 star rating on the Google Play
+Store and multiple good reviews.</p>
+				<div class="view-site" id="focus-link">View Site</div>
+
+		</div>
+
+	</div>
+
 <!-- TITLE PAGE SECTION --------------------------------->
 
 <div id="titlesection-container">
@@ -12,7 +79,7 @@
 			
 			<ul class="nav nav-pills nav-justified">
 	  			<li><a href="#" class="link">About</a></li>
-	  			<li><a href="#" class="link">Projects</a></li>
+	  			<li><a href="#" class="link">Portfolio</a></li>
 	  			<li><a href="#" class="link">Contact</a></li>
 	  			<li><a href="#" class="link">Resume</a></li>
 			</ul>
@@ -89,6 +156,9 @@
 				<li class="skilltag">Ruby</li>
 				<li class="skilltag">Java</li>
 				<li class="skilltag">Android Studio</li>
+				<li class="skilltag">Bootstrap</li>
+				<li class="skilltag">PHP</li>
+				<li class="skilltag">SQL</li>
 			</ul>												
 		</div>
 
@@ -96,8 +166,61 @@
 
 </div>
 
-<!-- Project Section--------------------------------------->
-<div id="projectsection-container"></div>
+
+
+<!-- Portfolio Section--------------------------------------->
+
+<div id="portfoliosection-container">
+	
+	<div id="portfoliosection-main">
+		
+		<div id="portfoliosection-greeting">Projects</div>
+
+		<div id="underline"></div>
+
+		<div id="projects">
+
+			<!-- Use bootstrap grid when adding projects -->
+			<div class="project" id="focus-container">
+				<div class="projectpicture">
+				<%= image_tag ("focus_project.png"), :class=>"img-thumbnail" %>
+				</div>
+				<div class="projectcover">
+					<div class="project-name">Focus</div>
+					<div class="learn-more" id="focus-learn-more">Learn More</div>
+				</div>
+			</div>
+			<div id="coming-soon">More Projects coming soon!</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<!-- Contact Section---------------------------------------->
+
+<div id="contactsection-container">
+	
+	<div id="forms-container">
+		
+		<div id="contact-header">Contact</div>
+
+		<div id="contact-underline"></div>
+
+		<div id="contact-name-email">
+			<input type="text" class="contact-info" placeholder="Name">
+			<input type="email" class="contact-info" placeholder="Email">
+		</div>
+
+		<textarea id="message-area" placeholder="Type your message"></textarea>
+
+		<div id="submit-btn">Submit</div>
+
+	</div>
+
+</div>
 
 	
 <!-- JAVASCRIPT -------------------------------------------->
@@ -150,18 +273,18 @@
 	});
 	$(window).trigger('resize');
 
+	//Tag cloud
 	var tagcloud_height = $("#tagcloud").height();
 	var tagcloud_width = $("#tagcloud").width();
-	//3D Skills Sphere
 	var settings = {
 		//height of sphere container
 		height: tagcloud_height, 
 		//width of sphere container
-		width: tagcloud_width, 
+		width: tagcloud_width, 	
 		//radius of sphere
 		radius: 250,
 		//rotation speed
-		speed: 1,
+		speed: 0.5,
 		//sphere rotations slower
 		// slower: 0.9,
 		// //delay between up<a href="https://www.jqueryscript.net/		time-clock/">date</a> position
@@ -179,7 +302,87 @@
 		// color: ''
 		// }
 	};
-	
 	$('#tagcloud').tagoSphere(settings);
+
+	/*Portfolio Section---------------------------------*/
+
+	//project cover scritpts
+	$(".projectcover").mouseenter(function(){
+		$(this).fadeTo(250, 0.9);
+	});
+
+	$(".projectcover").mouseleave(function(){
+		$(this).fadeTo(250, 0.0);
+	});
+
+	$(".learn-more").mouseenter(function(){
+		$(this).animate({"background-color": "#4dff88",}, 250);
+		$(this).css({"color": "black"});		
+	});
+
+	$(".learn-more").mouseleave(function(){
+		$(this).animate({"background-color": "#737373",}, 250);
+		$(this).css({"color": "white"});		
+	});
+
+	//project popup scripts
+
+	$(".view-site").mouseenter(function(){
+		$(this).animate({"background-color":"white"}, 250);
+		$(this).css({"color":"#4dff88"});
+	});
+
+	$(".view-site").mouseleave(function(){
+		$(this).animate({"background-color":"#4dff88"}, 250);
+		$(this).css({"color":"black"});
+	});
+
+	$("#page-cover").height($(window).height());
+	$("#page-cover").width($(window).width() - 2);
+
+	$("#focus-learn-more").click(function(){
+		$("#focus-popup").show("scale", 250);
+		$("#page-cover").show();
+	});
+
+	$("#page-cover").click(function(){
+		$(".projectinfo-container").hide("scale", 250);
+		$("#page-cover").hide();
+	});
+
+	$("#focus-link").click(function(){
+		var win = window.open("https://play.google.com/store/apps/details?id=com.games.numsm_000.focus");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});
+
+	/*Contact Section---------------------------------*/
+
+	$(".contact-info").focus(function(){
+		$(this).animate({borderBottomColor:"#4dff88"}, 250);
+	});
+
+	$(".contact-info").focusout(function(){
+		$(this).animate({borderBottomColor:"#808080"}, 250);
+	});
+
+	// $("#message-area").focus(function(){
+	// 	$(this).animate({borderColor:"#4dff88"},250);
+	// });
+
+	$("#submit-btn").mouseenter(function(){
+		$("#submit-btn").animate({"background-color":"#4dff88"}, 250);
+		$("#submit-btn").css("color","black");
+	});
+
+	$("#submit-btn").mouseleave(function(){
+		$("#submit-btn").animate({"background-color":"#404040"}, 250);
+		$("#submit-btn").css("color","white");
+	});
 
 </script>
