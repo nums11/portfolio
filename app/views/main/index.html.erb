@@ -68,16 +68,108 @@ Store and multiple good reviews.</p>
 <!-- TITLE PAGE SECTION --------------------------------->
 
 <div id="titlesection-container">
-
-	<!-- HEADER-------------------------- -->
 	
-	<div id="header">
+	<!-- Nav Bar-------------------------- -->
+	
+	<nav class="navbar navbar-light navbar-expand-xl bg-faded justify-content-center">
+
+		<!-- Logo -->
+    	<a href="/" class="navbar-brand d-flex mr-auto">Logo</a>
+
+    	<!-- Dropdown Button -->
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    	</button>
+
+    	<!-- Links -->
+    	<div class="collapse navbar-collapse w-100" id="collapsingNavbar">
+        	<ul class="navbar-nav w-100 justify-content-center">
+            	<li class="nav-item">
+                	<a class="nav-link" href="#" id="about">About</a>
+            	</li>
+            	<li class="nav-item">
+                <a class="nav-link" href="#" id="portfolio">Portfolio</a>
+            	</li>
+            	<li class="nav-item">
+                <a class="nav-link" href="#" id="contact">Contact</a>
+            	</li>
+            	<li class="nav-item">
+                	<a class="nav-link" href="#" id="resume">Resume</a>
+            	</li>
+        	</ul>
+    	</div>
+
+	</nav>
+
+	<!-- main -------------------->
+	<div class="container-fluid" id="main">
+
+		<!-- Social Media Buttons Left Side -->
+			
+		<div class="btn-group-vertical container" id="	socialmedia-left">
+		  	<button type="button" class="btn btn-primary smlink smlink-vert" 		id="githublink">
+		 		<%= image_tag("GitHub-Mark-Light-32px.png") %>
+		  	</button>
+		  	<button type="button" class="btn btn-primary smlink smlink-vert" 		id="twitterlink">
+		  		<%= image_tag("if_twitter_291710.png") %>
+		  	</button>
+		  	<button type="button" class="btn btn-primary smlink smlink-vert" 		id="facebooklink">
+		  		<%= image_tag("if_facebook_386622 (1).png") %>
+		  	</button>
+		  	<button type="button" class="btn btn-primary smlink smlink-vert" 		id="googleplaylink">
+		  		<%= image_tag("if_playstore_252084.png") %>
+		  	</button>
+		</div> 	 
+
+		<!-- Name and Descreption -->
+		<div id="info-area">
+			
+			<!-- Name -->
+	 			<div id="name">
+	 				<span class="letter">N</span><span class="letter">u</span><span class="letter">m</span><span class	="letter">f</span><span class="letter">o</span><span class="letter">r</span> <span class="letter">T</span><span class="letter">i</span><span class="letter">a</span><span class="letter">p</span><span class="letter">o</span>
+	 			</div>
+
+			<!-- Description -->
+			<div id="description">
+				<pre>&lt;p&gt;I am a passionate web and mobile app developer.&lt;/p&gt;</pre>
+			</div>
+
+		</div>
+
+	</div>	
+
+	<!-- Bottom	  -->
+
+	<div class="container-fluid" id="bottom">
 		
+		<!-- Social Media Buttons Bottom of page -->
+	 	 <div class="btn-group container" id="socialmedia-bottom">
+		  	<button type="button" class="btn btn-primary smlink" 		id="githublink">
+		 		<%= image_tag("GitHub-Mark-Light-32px.png") %>
+		  	</button>
+		  	<button type="button" class="btn btn-primary smlink" 		id="twitterlink">
+		  		<%= image_tag("if_twitter_291710.png") %>
+		  	</button>
+		  	<button type="button" class="btn btn-primary smlink" 		id="facebooklink">
+		  		<%= image_tag("if_facebook_386622 (1).png") %>
+		  	</button>
+		  	<button type="button" class="btn btn-primary smlink" 		id="googleplaylink">
+		  		<%= image_tag("if_playstore_252084.png") %>
+		  	</button>
+		</div> 	 
+
+	</div>
+
+
+</div>
+
+<!-- 	<div id="header">
+
 		<div id="logo-area"></div>
 	
 		<div id="nav-area">
 			
-			<ul class="nav nav-pills nav-justified">
+			<ul class="navbar-expand-* nav nav-pills nav-justified ">
 	  			<li><a href="#" class="link">About</a></li>
 	  			<li><a href="#" class="link">Portfolio</a></li>
 	  			<li><a href="#" class="link">Contact</a></li>
@@ -85,13 +177,12 @@ Store and multiple good reviews.</p>
 			</ul>
 	
 		</div>
-	
-	</div>
+	</div>	 -->
 
 	
 	<!-- BODY-------------------------- -->
  	
-	<div id="main">
+<!--  	<div id="main">
 		
 		<div id="socialmedia-area">
 			
@@ -127,11 +218,11 @@ Store and multiple good reviews.</p>
 	
 	</div> 
 
-</div>
+</div>  -->
 
 <!-- ABOUT SECTION ----------------------------------------->
 
-<div id="aboutsection-container">
+<!-- <div id="aboutsection-container">
 	
 	<div id="aboutsection-main">
 
@@ -164,13 +255,13 @@ Store and multiple good reviews.</p>
 
 	</div>
 
-</div>
+</div> -->
 
 
 
 <!-- Portfolio Section--------------------------------------->
 
-<div id="portfoliosection-container">
+<!-- <div id="portfoliosection-container">
 	
 	<div id="portfoliosection-main">
 		
@@ -180,7 +271,6 @@ Store and multiple good reviews.</p>
 
 		<div id="projects">
 
-			<!-- Use bootstrap grid when adding projects -->
 			<div class="project" id="focus-container">
 				<div class="projectpicture">
 				<%= image_tag ("focus_project.png"), :class=>"img-thumbnail" %>
@@ -196,12 +286,12 @@ Store and multiple good reviews.</p>
 
 	</div>
 
-</div>
+</div> -->
 
 
 <!-- Contact Section---------------------------------------->
 
-<div id="contactsection-container">
+<!-- <div id="contactsection-container">
 	
 	<div id="forms-container">
 		
@@ -220,7 +310,7 @@ Store and multiple good reviews.</p>
 
 	</div>
 
-</div>
+</div> -->
 
 	
 <!-- JAVASCRIPT -------------------------------------------->
@@ -229,36 +319,53 @@ Store and multiple good reviews.</p>
 
 	/*Title Section-----------------------------------*/
 
+	//Maintain container heights when window is resized
+	$(window).resize(function(){
+		$("#titlesection-container").height($(window).height() -1);
+
+		// //Change buttons from vertical to horizontal
+		if ($(window).width() < 1025) {
+    		$('.btn-group-vertical').hide();
+    		$('.btn-group').show();
+    		$('#info-area').css("width","100%");
+  		} else {
+    		$('.btn-group-vertical').show();
+    		$('.btn-group').hide();
+    		$('#info-area').css("width","84%");
+  		}
+		// // $("#aboutsection-container").height($(window).height());
+	});
+	$(window).trigger('resize');
+
 	//Set title section container height to window height
 	$("#titlesection-container").height($(window).height());
 
-	//Navigation links
-	$(".link").mouseenter(function(){
+	//Navigation link animations
+	$(".nav-link").mouseenter(function(){
 		$(this).animate({"color": "#4dff88"}, 250);
   	});
 
-	$(".link").mouseleave(function(){
+	$(".nav-link").mouseleave(function(){
 		$(this).animate({"color": "black"}, 250);
 	});
 
-	//Social Media Linls
-	$(".smlink").mouseenter(function(){
+	//Social Media Link animations
+	$(".smlink-vert").mouseenter(function(){
 		$(this).animate({"width":"100%"}, 250);
 	});
-
-	$(".smlink").mouseleave(function(){
+	
+	$(".smlink-vert").mouseleave(function(){
 		$(this).animate({"width":"60%"}, 250);
 	});
 
 	//Name animations
 	$(".letter").mouseenter(function(){
-		$(this).animate({"font-size":"150px", "color":"#ff6666"}, 250);
+		$(this).animate({"font-size":"20vmin", "color":"#ff6666"}, 250);
 	});
 
 	$(".letter").mouseleave(function(){
-		$(this).animate({"font-size":"140px", "color":"black"}, 250);
+		$(this).animate({"font-size":"18.5vmin", "color":"black"}, 250);
 	});
-
 
 	/*About Section-----------------------------------*/
 
@@ -266,12 +373,7 @@ Store and multiple good reviews.</p>
 	// $("#aboutsection-container").height($(window).height());
 
 
-	//Maintain container heights when window is resized
-	$(window).resize(function(){
-		$("#titlesection-container").height($(window).height());
-		// $("#aboutsection-container").height($(window).height());
-	});
-	$(window).trigger('resize');
+
 
 	//Tag cloud
 	var tagcloud_height = $("#tagcloud").height();

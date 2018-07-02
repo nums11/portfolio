@@ -1,51 +1,59 @@
 /*Title Section---------------------------------------*/
 
-//HEADER STYLING-----------------------
 
-#header{
-	width: 100%;
-	height: 14%;
-}
 
-#logo-area{
-	height: 100px;
-	width: 15%;
-	display: inline-block;	
-}
+// @media only screen and (max-width: 800px) {
 
-#nav-area{
-	height: 100px;
-	width: 50%;
-	display: inline-block;
+//    #name { 
+//       font-size: 20px; 
+//    }
+
+// }
+
+h5{
+    font-size: 1.4em;
+}      
+
+//Navbar
+.navbar{
 	padding-top: 20px;
-	margin-left: 10%;
+	font-size: 18px;
 }
 
-.link, .link:hover{
-	font-size: 18px;
-	background-color: white !important;
+#about{
+	padding-right: 140px;
 	color: black;
 }
 
+#portfolio{
+	padding-right: 140px;
+	color: black;
+}
 
-// //BODY STYLING--------------------------
+#contact{
+	padding-right: 140px;
+	color: black;
+}
 
+#resume{
+	color: black;
+}
+
+//Main------------------------
 #main{
-	height: 77%;
+	height: 80%;
+	padding: 0px;	
 }
 
-#socialmedia-area{
-	height: 600px;
-	width: 15%;
-	display: inline-block;
-	vertical-align: bottom;
-}
+//Left Social Media links
 
 .btn-group-vertical{
-	margin-top: 35%;
-	width: 50%;
+	width: 130px;
+	padding-left:0px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 8%;
 }
-
 .btn-group-vertical button{
 	height: 60px;
 }
@@ -79,30 +87,91 @@
 	width: 60%;
 }
 
+//Info
 #info-area{
-	height: 600px;
+	height: 100%;
 	width: 84%;
 	display: inline-block;
-	vertical-align: bottom;
-}
-
-#info{
-	width: 70%;
-	height: 60%;
-	margin-left: 6.7%;
-	margin-top: 6%;
+	vertical-align: top;
 	text-align: center;
 }
 
 #name{
 	height: 70%;
-	font-size: 140px;
+	font-size: 18.5vmin;
+	padding-top: 140px;
 }
 
 #description{
 	height: 30%;
-	font-size: 25px;
 }
+
+#description pre{
+	color: #808080;
+	// font-size: 17.5px;
+	font-size: 2.25vmin;
+}
+
+
+//Bottom--------------------------
+#bottom{
+	height: 10%; 
+	padding-left: 0px;
+}
+
+.btn-group{
+	width: 50%;
+	padding-left: 0px;
+}
+
+.btb-group button{
+	height: 30px;
+}
+
+
+
+//OLD*************
+
+#header{
+	width: 100%;
+	height: 14%;
+	padding: 0px;
+}
+
+#logo-area{
+	height: 100%;
+	width: 15%;
+	display: inline-block;	
+}
+
+#nav-area{
+	height: 100px;
+	width: 50%;
+	display: inline-block;
+	padding-top: 20px;
+	margin-left: 10%;
+}
+
+.link, .link:hover{
+	font-size: 18px;
+	background-color: white !important;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 pre{
 	background-color: white;
