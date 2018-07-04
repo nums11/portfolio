@@ -1,18 +1,4 @@
-/*Title Section---------------------------------------*/
-
-
-
-// @media only screen and (max-width: 800px) {
-
-//    #name { 
-//       font-size: 20px; 
-//    }
-
-// }
-
-h5{
-    font-size: 1.4em;
-}      
+/*Title Section---------------------------------------*/    
 
 //Navbar
 .navbar{
@@ -113,7 +99,7 @@ h5{
 }
 
 
-//Bottom--------------------------
+//Bottom Social Media Links----------------
 #bottom{
 	height: 10%; 
 	padding-left: 0px;
@@ -130,111 +116,51 @@ h5{
 
 
 
-//OLD*************
-
-#header{
-	width: 100%;
-	height: 14%;
-	padding: 0px;
-}
-
-#logo-area{
-	height: 100%;
-	width: 15%;
-	display: inline-block;	
-}
-
-#nav-area{
-	height: 100px;
-	width: 50%;
-	display: inline-block;
-	padding-top: 20px;
-	margin-left: 10%;
-}
-
-.link, .link:hover{
-	font-size: 18px;
-	background-color: white !important;
-	color: black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-pre{
-	background-color: white;
-	border: none;
-	font-size: 18px;
-}
-
 
 /*About Section----------------------------------*/
 
 #aboutsection-container{
-	// border: green solid;
 	background: linear-gradient(to bottom right,#ffb3b3, #ff0000);
-	height: 700px;
-	border: none;
-	// background: linear-gradient(to bottom right,#ffffff, #cccccc);
-}
-
-#aboutsection-main{
-	margin: auto;
-	height: 100%;
-	width: 99%;
-	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 30px;
 	color: white;
 }
 
-#aboutsection-info{
-	height: 100%;
-	width: 49%;
-	display: inline-block;
-	vertical-align: middle;
+.col-xl-6{
+	text-align: center;
+	padding-top: 30px;
 }
 
 #aboutsection-greeting{
-	height: 20%;
-	font-size: 40px;
-	margin-top: 25%;
+	font-size: 7.7vmin;
+	margin-top: 150px;
 }
 
 #aboutsection-description{
-	height: 20%;
-	font-size: 20px;
+	width: 80%;
 	margin: auto;
-	width: 60%;
+	margin-top: 50px;
+	font-size: 2.6vh;
 }
 
-#tagcloud{
-	height: 100%;
-	width: 50%;
-	font-size: 20px;
-	margin: auto;
-	display: inline-block;
-	vertical-align: middle;
-	background:none;
-	z-index: 1;
+
+#dummy-space{
+	border: blue solid;
+	height: 300px;
 }
 
-.skilltag, .skilltag:hover{
-	font-size: 35px !important;
-	color: #4dff88 !important;
-	border: none !important;
-	cursor: pointer !important;
-}
+
+
+/*Portfolio Section------------------------------------*/
+
+
+
+
+
+
+
+/*OLD----------------*/
 
 /*Portfolio Section-----------------------------------*/
 

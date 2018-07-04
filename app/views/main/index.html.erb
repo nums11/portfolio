@@ -65,6 +65,9 @@ Store and multiple good reviews.</p>
 
 	</div>
 
+
+
+
 <!-- TITLE PAGE SECTION --------------------------------->
 
 <div id="titlesection-container">
@@ -163,103 +166,60 @@ Store and multiple good reviews.</p>
 
 </div>
 
-<!-- 	<div id="header">
 
-		<div id="logo-area"></div>
-	
-		<div id="nav-area">
-			
-			<ul class="navbar-expand-* nav nav-pills nav-justified ">
-	  			<li><a href="#" class="link">About</a></li>
-	  			<li><a href="#" class="link">Portfolio</a></li>
-	  			<li><a href="#" class="link">Contact</a></li>
-	  			<li><a href="#" class="link">Resume</a></li>
-			</ul>
-	
-		</div>
-	</div>	 -->
 
-	
-	<!-- BODY-------------------------- -->
- 	
-<!--  	<div id="main">
-		
-		<div id="socialmedia-area">
-			
-	 		<div class="btn-group-vertical">
-	  			<button type="button" class="btn btn-primary smlink" 	id="githublink">
-	 				<%= image_tag("GitHub-Mark-Light-32px.png") %>
-	  			</button>
-	  			<button type="button" class="btn btn-primary smlink" 	id="twitterlink">
-	  				<%= image_tag("if_twitter_291710.png") %>
-	  			</button>
-	  			<button type="button" class="btn btn-primary smlink" 	id="facebooklink">
-	  				<%= image_tag("if_facebook_386622 (1).png") %>
-	  			</button>
-	  			<button type="button" class="btn btn-primary smlink" 	id="googleplaylink">
-	  				<%= image_tag("if_playstore_252084.png") %>
-	  			</button>
-			</div> 
-	
-		</div>
-	
-	 	<div id="info-area">
-	 		
-	 		<div id="info">
-	 			<div id="name">
-	 				<span class="letter">N</span><span class="letter">u</span><span class="letter">m</span><span class	="letter">f</span><span class="letter">o</span><span class="letter">r</span> <span class="letter">T</span><span class="letter">i</span><span class="letter">a</span><span class="letter">p</span><span class="letter">o</span>
-	 			</div>
-	 			<div id="description">
-	 				<pre>&lt;p&gt;I am a passionate web and mobile app developer.&lt;/p&gt;</pre>
-	 			</div>
-	 		</div>
-	
-	 	</div> 
-	
-	</div> 
 
-</div>  -->
 
 <!-- ABOUT SECTION ----------------------------------------->
 
-<!-- <div id="aboutsection-container">
+<div class="container-fluid" id="aboutsection-container">
 	
-	<div id="aboutsection-main">
+	<div class="row">
 
-		<div id="aboutsection-info">
-			<div id="aboutsection-greeting">Hi I'm Numfor, nice to 	meet you.</div>
-			<div id="aboutsection-description">I'm currently a 	rising sophomore at Rensselaer Polytechnic Institute. I'm focused, driven, and constantly improving my skills as a developer. Take a look at some of my skills:	</div>
+		<div class="col-xl-6">
+			
+			<h1 id="aboutsection-greeting">Hi, I'm Numfor, nice to meet you.</h1>
+			<p id="aboutsection-description">I'm currently a rising sophomore at Rensselaer Polytechnic Institute. I'm focused, driven, and constantly improving my skills as a developer. I enjoy taking on challenging projects and finding creative solutions. Take a look at some of my skills:
+
 		</div>
+
+		<div class="col-xl-6">
+
+    		<div id="tagcloud-container">
+    		  <canvas id="tagcloud"></canvas>
+    		</div>
+    		<div id="tags">
+    		  <ul>
+    		    <li><a class="tag_test">HTML</a></li>
+    		    <li><a class="tag_test">CSS</a></li>
+    		    <li><a class="tag_test">JavaScript</a></li>
+    		    <li><a class="tag_test">jQuery</a></li>
+    		    <li><a class="tag_test">Vue.js</a></li>
+    		    <li><a class="tag_test">Ruby on Rails</a></li>
+    		    <li><a class="tag_test">Git</a></li>
+    		    <li><a class="tag_test">PHP</a></li>
+    		    <li><a class="tag_test">Bash</a></li>
+    		    <li><a class="tag_test">C</a></li>
+    		    <li><a class="tag_test">C++</a></li>
+    		    <li><a class="tag_test">Ruby</a></li>
+    		    <li><a class="tag_test">Java</a></li>
+    		    <li><a class="tag_test">Android Studio</a></li>
+    		    <li><a class="tag_test">Bootstrap</a></li>
+    		    <li><a class="tag_test">PHP</a></li>
+    		    <li><a class="tag_test">SQL</a></li>
+    		  </ul>
+    		</div>
 		
-		<div id="tagcloud">
-			<ul>
-				<li class="skilltag">Html</li>
-				<li class="skilltag">CSS</li>
-				<li class="skilltag">Javascript</li>
-				<li class="skilltag">jQuery</li>
-				<li class="skilltag">Vue.js</li>
-				<li class="skilltag">Ruby on Rails</li>
-				<li class="skilltag">Git</li>
-				<li class="skilltag">PHP</li>
-				<li class="skilltag">Bash</li>
-				<li class="skilltag">C</li>
-				<li class="skilltag">C++</li>
-				<li class="skilltag">Ruby</li>
-				<li class="skilltag">Java</li>
-				<li class="skilltag">Android Studio</li>
-				<li class="skilltag">Bootstrap</li>
-				<li class="skilltag">PHP</li>
-				<li class="skilltag">SQL</li>
-			</ul>												
-		</div>
+				</div>
+		
+			</div>
 
-	</div>
-
-</div> -->
-
+</div>
 
 
 <!-- Portfolio Section--------------------------------------->
+
+<div id="dummy-space"></div>
 
 <!-- <div id="portfoliosection-container">
 	
@@ -316,24 +276,45 @@ Store and multiple good reviews.</p>
 <!-- JAVASCRIPT -------------------------------------------->
 
 <script type="text/javascript">
+	//Tag cloud
+	var canvas = document.getElementsByTagName('canvas')[0];
+	canvas.width  = 600;
+	canvas.height = 600;
+	var canvas_text_height = 30;
 
 	/*Title Section-----------------------------------*/
 
 	//Maintain container heights when window is resized
 	$(window).resize(function(){
-		$("#titlesection-container").height($(window).height() -1);
+		$("#titlesection-container").height($(window).height());
 
 		// //Change buttons from vertical to horizontal
 		if ($(window).width() < 1025) {
     		$('.btn-group-vertical').hide();
     		$('.btn-group').show();
     		$('#info-area').css("width","100%");
+    		$('#aboutsection-greeting').css("margin-top","0px");
+    		$('#aboutsection-description').css("margin-top","30px");
   		} else {
     		$('.btn-group-vertical').show();
     		$('.btn-group').hide();
     		$('#info-area').css("width","84%");
+    		$('#aboutsection-greeting').css("margin-top","150px");
+    		$('#aboutsection-description').css("margin-top","50px");
   		}
-		// // $("#aboutsection-container").height($(window).height());
+
+
+  		//Tag Cloud
+  		if($(window).width() < 768){
+  			canvas.width = 300;
+  			canvas.height = 300;
+  			canvas_text_height = 20;
+  		} else{
+  			canvas.width = 600;
+  			canvas.height = 600;
+  			canvas_text_height = 30;
+  		}
+
 	});
 	$(window).trigger('resize');
 
@@ -367,44 +348,25 @@ Store and multiple good reviews.</p>
 		$(this).animate({"font-size":"18.5vmin", "color":"black"}, 250);
 	});
 
+
+
+
 	/*About Section-----------------------------------*/
 
-	//Set about section container height
-	// $("#aboutsection-container").height($(window).height());
-
-
-
-
 	//Tag cloud
-	var tagcloud_height = $("#tagcloud").height();
-	var tagcloud_width = $("#tagcloud").width();
-	var settings = {
-		//height of sphere container
-		height: tagcloud_height, 
-		//width of sphere container
-		width: tagcloud_width, 	
-		//radius of sphere
-		radius: 250,
-		//rotation speed
-		speed: 0.5,
-		//sphere rotations slower
-		// slower: 0.9,
-		// //delay between up<a href="https://www.jqueryscript.net/		time-clock/">date</a> position
-		// timer: 5,
-		// //dependence of a font size on axis Z
-		// fontMultiplier: 15,
-		// //tag css stylies on mouse over
-		// hoverStyle: {
-		// border: 'none',
-		// color: '#4dff88'
-		// },
-		// //tag css stylies on mouse out
-		// mouseOutStyle: {
-		// border: '',
-		// color: ''
-		// }
-	};
-	$('#tagcloud').tagoSphere(settings);
+	if(!$('#tagcloud').tagcanvas({
+      textColour: '#4dff88',
+      depth: 0.8,
+      maxSpeed: 0.10,
+      noSelect: true,
+      textHeight: canvas_text_height
+    },'tags')) {
+      // something went wrong, hide the canvas container
+      $('#myCanvasContainer').hide();
+    }
+
+
+
 
 	/*Portfolio Section---------------------------------*/
 
