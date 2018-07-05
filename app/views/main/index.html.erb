@@ -130,6 +130,8 @@ Store and multiple good reviews.</p>
 </div>
 
 
+
+
 <!-- TITLE PAGE SECTION --------------------------------->
 
 <div id="titlesection-container">
@@ -231,7 +233,6 @@ Store and multiple good reviews.</p>
 
 
 
-
 <!-- ABOUT SECTION ----------------------------------------->
 
 <div class="container-fluid" id="aboutsection-container">
@@ -281,6 +282,8 @@ Store and multiple good reviews.</p>
 </div>
 
 
+
+
 <!-- Portfolio Section--------------------------------------->
 
 <div class="container-fluid" id="portfoliosection-container">
@@ -309,38 +312,67 @@ Store and multiple good reviews.</p>
 
 
 
+<!-- Contact Section---------------------------------------->
 
-
-
-<!-- <div id="portfoliosection-container">
+<div class="container-fluid" id="contactsection-container">
 	
-	<div id="portfoliosection-main">
+	<h1>Contact</h1>
+
+	<div id="contact-underline"></div>
+<!-- 
+	<form class="form-inline">
 		
-		<div id="portfoliosection-greeting">Projects</div>
+		<input type="text" class="form-control" placeholder="Name">
 
-		<div id="underline"></div>
+		<div id="divider"></div>
 
-		<div id="projects">
+		<input type="email" class="form-control" placeholder="Email">
 
-			<div class="project" id="focus-container">
-				<div class="projectpicture">
-				<%= image_tag ("focus_project.png"), :class=>"img-thumbnail" %>
-				</div>
-				<div class="projectcover">
-					<div class="project-name">Focus</div>
-					<div class="learn-more" id="focus-learn-more">Learn More</div>
-				</div>
+		<textarea id="message_body"></textarea>
+
+	</form> -->
+
+	<div class="row" id="name-email">
+		
+		<div class="col-xl-6 col-xl-offset-2">
+
+			<div class="form-container">
+				
+				<input type="text" placeholder="Name" class="contact-info">	
+
 			</div>
-			<div id="coming-soon">More Projects coming soon!</div>
+			
+
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="col-xl-6 col-xl-offset-2" id="rightside">
+
+			<div class="form-container">
+				
+				<input type="email" placeholder="Email" class="contact-info">
+
+			</div>
+			
 
 		</div>
 
 	</div>
 
-</div> -->
+	<div class="row" id="message">
+		
+		<div class="col-xl-12">
+			
+			<textarea placeholder="Type Message Here"></textarea>
 
+		</div>
 
-<!-- Contact Section---------------------------------------->
+	</div>
+
+	<div id="submit-btn">Submit</div>
+
+</div>
 
 <!-- <div id="contactsection-container">
 	
@@ -362,6 +394,8 @@ Store and multiple good reviews.</p>
 	</div>
 
 </div> -->
+
+
 
 	
 <!-- JAVASCRIPT -------------------------------------------->
@@ -395,7 +429,12 @@ Store and multiple good reviews.</p>
     		$('#aboutsection-greeting').css("margin-top","0px");
     		$('#aboutsection-description').css("margin-top","30px");
     		$(".project").css("width","100%");
-
+    		$("#name-email").css("width","90%");
+    		$(".form-container").css("margin-left","0px");
+    		$(".form-container").css("width","100%");
+    		$("#message").css("width","90%");
+    		$(".col-xl-12").css("padding-left","0px");
+    		$("#submit-btn").css("width","60%");
   		} else {
     		$('.btn-group-vertical').show();
     		$('.btn-group').hide();
@@ -403,7 +442,12 @@ Store and multiple good reviews.</p>
     		$('#aboutsection-greeting').css("margin-top","150px");
     		$('#aboutsection-description').css("margin-top","50px");
     		$(".project").css("width","70%");
-
+    		$("#name-email").css("width","40%");
+    		$(".form-container").css("margin-left","8px");
+    		$(".form-container").css("width","97%");
+    		$("#message").css("width","40%");
+    		$(".col-xl-12").css("padding-left","9px");
+    		$("#submit-btn").css("width","20%");
   		}
 
 
@@ -541,19 +585,19 @@ Store and multiple good reviews.</p>
 		}
 	});
 
+
+	
+
 	/*Contact Section---------------------------------*/
 
-	$(".contact-info").focus(function(){
-		$(this).animate({borderBottomColor:"#4dff88"}, 250);
-	});
-
-	$(".contact-info").focusout(function(){
-		$(this).animate({borderBottomColor:"#808080"}, 250);
-	});
-
-	// $("#message-area").focus(function(){
-	// 	$(this).animate({borderColor:"#4dff88"},250);
+	// $(".contact-info").focus(function(){
+	// 	$(this).animate({borderBottomColor:"#4dff88"}, 250);
 	// });
+
+	// $(".contact-info").focusout(function(){
+	// 	$(this).animate({borderBottomColor:"#808080"}, 250);
+	// });
+
 
 	$("#submit-btn").mouseenter(function(){
 		$("#submit-btn").animate({"background-color":"#4dff88"}, 250);
