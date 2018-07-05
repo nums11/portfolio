@@ -90,12 +90,14 @@
 
 #description{
 	height: 30%;
+	margin: auto;
 }
 
 #description pre{
 	color: #808080;
 	// font-size: 17.5px;
 	font-size: 2.25vmin;
+	// font-size: 1.6vmax;
 }
 
 
@@ -145,43 +147,17 @@
 }
 
 
-#dummy-space{
-	border: blue solid;
-	height: 300px;
-}
-
 
 
 /*Portfolio Section------------------------------------*/
 
-
-
-
-
-
-
-/*OLD----------------*/
-
-/*Portfolio Section-----------------------------------*/
-
 #portfoliosection-container{
-	height: 800px;
-	padding-top: 3%;
-	// background: linear-gradient(to bottom right,#e6ffff, #80ffff);
-	color: #ff4d4d;
+	padding: 30px 0px 40px 0px;
+	text-align: center;
 }
 
-#portfoliosection-main{
-	height: 90%;
-	width: 85%;
-	margin: auto;
-	text-align: center;
-}	
-
 #portfoliosection-greeting{
-	height: 10%;
-	font-size: 40px;
-	color: black;
+	font-size: 6.5vh;
 }
 
 #underline{
@@ -191,61 +167,72 @@
 	border: black solid;
 }
 
-#projects{
-	width: 100%;
-	height: 45%;
-	display: inline-block;
-	margin-top: 5%;
-}
-
 .project{
 	margin: auto;
-	width: 40%;	
-	height: 93%;
-}
-
-#project-name{
-	text-align: center;
-	height: 20%;
-}
-
-#coming-soon{
-	height: 25%;
-	text-align: center;
-	font-size: 40px;
-	margin-top: 8%;
-}
-
-#focus-container{
+	width: 70%;
+	margin-top: 40px;
+	min-height: 100px;
+	position: relative;
 }
 
 .projectpicture{
-	height: 34%;
-	width: 33.7%;
 	position: absolute;
 }
 
 .projectcover{
 	background-color: #737373;
 	opacity: 0.0;
-	height: 34%;
-	width: 33.7%;
+	// height: 100%;
+	// width: 100%;
 	position: absolute;
 	color: white;
 }
 
 .project-name{
-	font-size: 30px;
+	font-size: 6.5vh;
 	margin-top: 8%;
 }
 
 .learn-more{
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 80px;
 	font-size: 30px;
 	border: #4dff88 solid;
 	width: 40%;
 	cursor: pointer
+}
+
+//desktop popup---------------------
+
+.project-popup-desktop{
+	height: 600px;
+	width: 850px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 60px;
+	z-index: 3;
+	background-color: white;
+	border: grey solid thin;
+	display: none;
+}
+
+#focus-carousel-desktop{
+	height: 100%;
+	width: 40%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.carousel-pic{
+	height: 100%;
+	width: 100%;
+	border: blue solid;
+}
+
+.carousel-inner{
+	height: 100%;
+	width: 100%;
 }
 
 .view-site{
@@ -261,32 +248,19 @@
 	cursor: pointer;
 }
 
-.projectinfo-container{
-	height: 72%;
-	width: 50%;
-	position: absolute;
-	margin-left: 25%;
-	z-index: 2;
-	background-color: white;
-	border: grey solid thin;
-	display: none;
-	position: fixed;
-	margin-top: 5%;
-}
-
-.project-info{
+#focus-info-desktop{
 	height: 100%;
 	width: 59%;
 	display: inline-block;
 	vertical-align: bottom;
 }
 
-.project-info h1{
+#focus-info-desktop h1{
 	text-align: center;
 	color: black;
 }
 
-.project-info p{
+#focus-info-desktop p, #focus-info-mobile p{
 	text-align: center; 
 	color: black;
 	margin: auto;
@@ -302,26 +276,55 @@
 	color: red;
 }
 
-#focus-carousel{
-	height: 100%;
-	width: 40%;
-	display: inline-block;
-	vertical-align: bottom;
+//Mobile Popup-----------------------------
+
+.project-popup-mobile{
+	position: fixed;
+	background-color: white;
+	z-index: 3;
+	text-align: center;
+	overflow: scroll;
+	padding-top: 15px;
+	display: none;
 }
 
-.carousel-pic{
-	height: 100%;
+#focus-carousel-mobile{
 	width: 100%;
+	margin: auto;
+	margin-top: 350px;
+}
+
+.project-info-mobile{
+	height: 40%;
+}
+
+.project-info-mobile h1{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.exit{
+	display: inline-block;
+	font-size: 20px;
+	float: right;
+	margin-right: 20px;
 }
 
 #page-cover{
 	z-index: 2;
-	// background-color: #e6e6e6;
 	background-color: black;
 	opacity: 0.4;
 	position: fixed;
 	display: none;
 }
+
+#coming-soon{
+	margin-top: 50px;
+	color: #ff0000;
+}
+
+
+
 
 /*Contact Section-----------------------------------*/
 
