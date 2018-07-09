@@ -152,13 +152,13 @@ Store and multiple good reviews.</p>
     	<div class="collapse navbar-collapse w-100" id="collapsingNavbar">
         	<ul class="navbar-nav w-100 justify-content-center">
             	<li class="nav-item">
-                	<a class="nav-link" href="#" id="about">About</a>
+                	<a class="nav-link" href="#aboutsection-container" id="about">About</a>
             	</li>
             	<li class="nav-item">
-                <a class="nav-link" href="#" id="portfolio">Portfolio</a>
+                	<a class="nav-link" href="#portfoliosection-container" id="portfolio">Portfolio</a>
             	</li>
             	<li class="nav-item">
-                <a class="nav-link" href="#" id="contact">Contact</a>
+                	<a class="nav-link" href="#contactsection-container" id="contact">Contact</a>
             	</li>
             	<li class="nav-item">
                 	<a class="nav-link" href="#" id="resume">Resume</a>
@@ -319,18 +319,6 @@ Store and multiple good reviews.</p>
 	<h1>Contact</h1>
 
 	<div id="contact-underline"></div>
-<!-- 
-	<form class="form-inline">
-		
-		<input type="text" class="form-control" placeholder="Name">
-
-		<div id="divider"></div>
-
-		<input type="email" class="form-control" placeholder="Email">
-
-		<textarea id="message_body"></textarea>
-
-	</form> -->
 
 	<div class="row" id="name-email">
 		
@@ -374,27 +362,6 @@ Store and multiple good reviews.</p>
 
 </div>
 
-<!-- <div id="contactsection-container">
-	
-	<div id="forms-container">
-		
-		<div id="contact-header">Contact</div>
-
-		<div id="contact-underline"></div>
-
-		<div id="contact-name-email">
-			<input type="text" class="contact-info" placeholder="Name">
-			<input type="email" class="contact-info" placeholder="Email">
-		</div>
-
-		<textarea id="message-area" placeholder="Type your message"></textarea>
-
-		<div id="submit-btn">Submit</div>
-
-	</div>
-
-</div> -->
-
 
 
 	
@@ -420,8 +387,8 @@ Store and multiple good reviews.</p>
 		$("#page-cover").width($(window).width());
 		$('.project-popup-mobile').height($(window).height());
     	$('.project-popup-mobile').width($(window).width());
+    	$('#main').css("margin-top",$(".navbar").height());
 
-		// //Change buttons from vertical to horizontal
 		if ($(window).width() < 1025) {
     		$('.btn-group-vertical').hide();
     		$('.btn-group').show();
@@ -468,34 +435,83 @@ Store and multiple good reviews.</p>
 	});
 	$(window).trigger('resize');
 
+	//Hide navbar on scroll down and show on scrollup
+	var lastScrollTop = 0;
+	$(window).scroll(function(event){
+	   var st = $(this).scrollTop();
+	   if (st > lastScrollTop){
+	       // downscroll code
+	       $(".navbar").slideUp("fast");
+	   } else {
+	      // upscroll code
+	      $(".navbar").slideDown("fast");
+	   }
+	   lastScrollTop = st;
+	});
+
+
+	//Smooth Scrolling
+	// Add smooth scrolling to all links
+  	$(".nav-link").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    	if (this.hash !== "") {
+    	  // Prevent default anchor click behavior
+    	  event.preventDefault();
+	
+    	  // Store hash
+    	  var hash = this.hash;
+	
+    	  // Using jQuery's animate() method to add smooth page 	scroll
+    	  // The optional number (800) specifies the number of 	milliseconds it takes to scroll to the specified area
+    	  $('html, body').animate({ scrollTop: $(hash).offset().top
+    	  }, 800, function(){
+   	
+    	    // Add hash (#) to URL when done scrolling (default 	click behavior)
+    	    window.location.hash = hash;    	    
+    	  });
+    	} // End if
+  	});
+
 	//Set title section container height to window height
 	$("#titlesection-container").height($(window).height());
 
+	//Hide Menu when link is clicked in mobile version
+	$(".nav-link").click(function(){
+		$("#collapsingNavbar").collapse("toggle");
+	});
+
+
 	//Navigation link animations
 	$(".nav-link").mouseenter(function(){
-		$(this).animate({"color": "#4dff88"}, 250);
+		$(this).stop().animate({"color": "#4dff88 !important"}, 250);
   	});
 
 	$(".nav-link").mouseleave(function(){
-		$(this).animate({"color": "black"}, 250);
+		$(this).stop().animate({"color": "black"}, 250);
 	});
+
+	// $(".nav-link").click(function(){
+	// 	$(".nav-link").css("color","black !important");
+	// 	$(this).css("color","#4dff88 !important");
+	// });
 
 	//Social Media Link animations
 	$(".smlink-vert").mouseenter(function(){
-		$(this).animate({"width":"100%"}, 250);
+		$(this).stop().animate({"width":"100%"}, 250);
 	});
 	
 	$(".smlink-vert").mouseleave(function(){
-		$(this).animate({"width":"60%"}, 250);
+		$(this).stop().animate({"width":"60%"}, 250);
 	});
 
 	//Name animations
 	$(".letter").mouseenter(function(){
-		$(this).animate({"font-size":"20vmin", "color":"#ff6666"}, 250);
+		$(this).stop().animate({"font-size":"20vmin", "color":"#ff6666"}, 250);
 	});
 
 	$(".letter").mouseleave(function(){
-		$(this).animate({"font-size":"18.5vmin", "color":"black"}, 250);
+		$(this).stop().animate({"font-size":"18.5vmin", "color":"black"}, 250);
 	});
 
 
@@ -586,18 +602,9 @@ Store and multiple good reviews.</p>
 	});
 
 
-	
+
 
 	/*Contact Section---------------------------------*/
-
-	// $(".contact-info").focus(function(){
-	// 	$(this).animate({borderBottomColor:"#4dff88"}, 250);
-	// });
-
-	// $(".contact-info").focusout(function(){
-	// 	$(this).animate({borderBottomColor:"#808080"}, 250);
-	// });
-
 
 	$("#submit-btn").mouseenter(function(){
 		$("#submit-btn").animate({"background-color":"#4dff88"}, 250);

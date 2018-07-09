@@ -4,26 +4,25 @@
 .navbar{
 	padding-top: 20px;
 	font-size: 18px;
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
 }
 
-#about{
+#about, #portfolio, #contact, #resume{
+	color: black;
+}
+
+#about, #portfolio, #contact{
 	padding-right: 140px;
-	color: black;
 }
 
-#portfolio{
-	padding-right: 140px;
-	color: black;
+.active{
+	color: #4dff88 !important;
 }
 
-#contact{
-	padding-right: 140px;
-	color: black;
-}
-
-#resume{
-	color: black;
-}
 
 //Main------------------------
 #main{
@@ -316,6 +315,7 @@
 	opacity: 0.4;
 	position: fixed;
 	display: none;
+	top: 0;
 }
 
 #coming-soon{

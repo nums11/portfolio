@@ -31,7 +31,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
+
+    <!-- For Scrollspy -->
+    <style type="text/css">
+      body{
+        position: relative;
+      }
+    </style>
     <%= yield %>
   </body>
 </html>
