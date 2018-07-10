@@ -1,5 +1,17 @@
 /*Title Section---------------------------------------*/    
 
+body{
+
+}
+
+#titlesection-container{
+	background-image: url("silhoutte2.jpg");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 40%;
+}
+
+
 //Navbar
 .navbar{
 	padding-top: 20px;
@@ -19,6 +31,10 @@
 	padding-right: 140px;
 }
 
+#resume:hover{
+	cursor: pointer;
+}
+
 .active{
 	color: #4dff88 !important;
 }
@@ -32,12 +48,13 @@
 
 //Left Social Media links
 
+
 .btn-group-vertical{
 	width: 130px;
 	padding-left:0px;
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 8%;
+	margin-top: 10%;
 }
 .btn-group-vertical button{
 	height: 60px;
@@ -54,15 +71,9 @@
 	width: 60%;
 }
 
-#twitterlink, #twitterlink:hover{
-	background-color: #1ebff0;
-	border-color: #1ebff0;
-	width: 60%;
-}
-
-#facebooklink, #facebooklink:hover{
-	background-color: #3b5998;
-	border-color: #3b5998;
+#linkedinlink, #linkedinlink:hover{
+	background-color: #0B76B5;
+	border-color: #0B76B5;
 	width: 60%;
 }
 
@@ -97,6 +108,7 @@
 	// font-size: 17.5px;
 	font-size: 2.25vmin;
 	// font-size: 1.6vmax;
+	display: inline;
 }
 
 
@@ -121,7 +133,8 @@
 /*About Section----------------------------------*/
 
 #aboutsection-container{
-	background: linear-gradient(to bottom right,#ffb3b3, #ff0000);
+	// background: linear-gradient(to bottom right,#ffb3b3, #ff0000);
+	background: linear-gradient(to bottom right,#FE8B4C, #FF514E);
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-bottom: 30px;
@@ -272,7 +285,7 @@
 	text-align: center;
 	width: 75%;
 	margin: auto;
-	color: red;
+	color: #FE7E49;
 }
 
 //Mobile Popup-----------------------------
@@ -285,6 +298,7 @@
 	overflow: scroll;
 	padding-top: 15px;
 	display: none;
+	top: 0;
 }
 
 #focus-carousel-mobile{
@@ -320,7 +334,7 @@
 
 #coming-soon{
 	margin-top: 50px;
-	color: #ff0000;
+	color: #FE7E49;
 }
 
 

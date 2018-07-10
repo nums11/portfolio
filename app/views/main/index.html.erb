@@ -135,7 +135,7 @@ Store and multiple good reviews.</p>
 <!-- TITLE PAGE SECTION --------------------------------->
 
 <div id="titlesection-container">
-	
+
 	<!-- Nav Bar-------------------------- -->
 	
 	<nav class="navbar navbar-light navbar-expand-xl bg-faded justify-content-center">
@@ -161,7 +161,7 @@ Store and multiple good reviews.</p>
                 	<a class="nav-link" href="#contactsection-container" id="contact">Contact</a>
             	</li>
             	<li class="nav-item">
-                	<a class="nav-link" href="#" id="resume">Resume</a>
+                	<a class="nav-link" id="resume">Resume</a>
             	</li>
         	</ul>
     	</div>
@@ -174,16 +174,13 @@ Store and multiple good reviews.</p>
 		<!-- Social Media Buttons Left Side -->
 			
 		<div class="btn-group-vertical container" id="	socialmedia-left">
-		  	<button type="button" class="btn btn-primary smlink smlink-vert" 		id="githublink">
+		  	<button type="button" class="btn btn-primary smlink smlink-vert" id="githublink">
 		 		<%= image_tag("GitHub-Mark-Light-32px.png") %>
 		  	</button>
-		  	<button type="button" class="btn btn-primary smlink smlink-vert" 		id="twitterlink">
-		  		<%= image_tag("if_twitter_291710.png") %>
+		  	<button type="button" class="btn btn-primary smlink smlink-vert" id="linkedinlink">
+		 		<%= image_tag("linkedinlogo.png") %>
 		  	</button>
-		  	<button type="button" class="btn btn-primary smlink smlink-vert" 		id="facebooklink">
-		  		<%= image_tag("if_facebook_386622 (1).png") %>
-		  	</button>
-		  	<button type="button" class="btn btn-primary smlink smlink-vert" 		id="googleplaylink">
+		  	<button type="button" class="btn btn-primary smlink smlink-vert" id="googleplaylink">
 		  		<%= image_tag("if_playstore_252084.png") %>
 		  	</button>
 		</div> 	 
@@ -197,9 +194,7 @@ Store and multiple good reviews.</p>
 	 			</div>
 
 			<!-- Description -->
-			<div id="description">
-				<pre>&lt;p&gt;I am a passionate web and mobile app developer.&lt;/p&gt;</pre>
-			</div>
+			<div id="description"></div>
 
 		</div>
 
@@ -214,11 +209,8 @@ Store and multiple good reviews.</p>
 		  	<button type="button" class="btn btn-primary smlink" 		id="githublink">
 		 		<%= image_tag("GitHub-Mark-Light-32px.png") %>
 		  	</button>
-		  	<button type="button" class="btn btn-primary smlink" 		id="twitterlink">
-		  		<%= image_tag("if_twitter_291710.png") %>
-		  	</button>
-		  	<button type="button" class="btn btn-primary smlink" 		id="facebooklink">
-		  		<%= image_tag("if_facebook_386622 (1).png") %>
+		  	<button type="button" class="btn btn-primary smlink" 		id="linkedinlink">
+		 		<%= image_tag("linkedinlogo.png") %>
 		  	</button>
 		  	<button type="button" class="btn btn-primary smlink" 		id="googleplaylink">
 		  		<%= image_tag("if_playstore_252084.png") %>
@@ -272,6 +264,7 @@ Store and multiple good reviews.</p>
     		    <li><a>Bootstrap</a></li>
     		    <li><a>PHP</a></li>
     		    <li><a>SQL</a></li>
+    		    <li><a>MIPS</a></li>
     		  </ul>
     		</div>
 		
@@ -368,6 +361,33 @@ Store and multiple good reviews.</p>
 <!-- JAVASCRIPT -------------------------------------------->
 
 <script type="text/javascript">
+	/*Beginning Animation----------------------------*/
+
+	//Hide Nav bar and buttons
+	$(".navbar-nav").hide();
+	$(".navbar-toggler").hide();
+	$(".btn").hide();
+
+	//Type animation
+	var instance = new TypeIt('#description', {
+    	// strings: ['<pre>&lt;p&gt;I am a passionate web and mobile app developer.&lt;/p&gt;</pre>'],
+    	speed: 50,
+    	breakLines: false,
+    	autoStart: false
+	})
+		.type('<pre>&lt;p&gt;I am a passienate web an')
+		.pause(750)
+		.delete(17)
+		.pause(500)
+		.type("passionate web and mobile app developer.&lt;/p&gt;</pre>");
+
+	//Showing navbar and buttons
+	$(".navbar-nav").delay(6000).fadeTo(1000, 1.0);
+	$(".btn").delay(6000).fadeTo(1000,1.0);
+	if($(window).width() < 1025){
+		$(".navbar-toggler").delay(6000).fadeTo(1000,1.0);
+	}
+
 	//Tag cloud
 	var canvas = document.getElementsByTagName('canvas')[0];
 	canvas.width  = 600;
@@ -402,6 +422,9 @@ Store and multiple good reviews.</p>
     		$("#message").css("width","90%");
     		$(".col-xl-12").css("padding-left","0px");
     		$("#submit-btn").css("width","60%");
+    		$(".navbar-toggler").show();
+    		$("#titlesection-container").css({"background-size":"90%", "background-position":"0% 100%"});
+
   		} else {
     		$('.btn-group-vertical').show();
     		$('.btn-group').hide();
@@ -415,6 +438,7 @@ Store and multiple good reviews.</p>
     		$("#message").css("width","40%");
     		$(".col-xl-12").css("padding-left","9px");
     		$("#submit-btn").css("width","20%");
+    		$("#titlesection-container").css({"background-size":"70%", "background-position":"40%"});
   		}
 
 
@@ -491,10 +515,17 @@ Store and multiple good reviews.</p>
 		$(this).stop().animate({"color": "black"}, 250);
 	});
 
-	// $(".nav-link").click(function(){
-	// 	$(".nav-link").css("color","black !important");
-	// 	$(this).css("color","#4dff88 !important");
-	// });
+	//Open Resume Pdf
+	$("#resume").click(function(){
+		var win = window.open("https://drive.google.com/file/d/17QzZBhDjNXyKcn4p-K7vcgsyCeGaMICC/view?usp=sharing");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});
 
 	//Social Media Link animations
 	$(".smlink-vert").mouseenter(function(){
@@ -507,14 +538,48 @@ Store and multiple good reviews.</p>
 
 	//Name animations
 	$(".letter").mouseenter(function(){
-		$(this).stop().animate({"font-size":"20vmin", "color":"#ff6666"}, 250);
+		$(this).stop().animate({"font-size":"20vmin", "color":"#4dff88"}, 250);
 	});
 
 	$(".letter").mouseleave(function(){
 		$(this).stop().animate({"font-size":"18.5vmin", "color":"black"}, 250);
 	});
 
+	//Open Github Link
+	$("#githublink").click(function(){
+		var win = window.open("https://github.com/nums11");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});
 
+	//Open LinkedIn Link
+	$("#linkedinlink").click(function(){
+		var win = window.open("https://www.linkedin.com/in/numfor-tiapo-578b9b15a");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});	
+
+	//Open Google Play Link
+	$("#googleplaylink").click(function(){
+		var win = window.open("https://play.google.com/store/apps/developer?id=Nums");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});
 
 
 	/*About Section-----------------------------------*/
