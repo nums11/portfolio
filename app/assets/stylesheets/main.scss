@@ -4,7 +4,7 @@ body{
 
 }
 
-#titlesection-container{
+#titlesection{
 	background-image: url("silhoutte2.jpg");
 	background-repeat: no-repeat;
 	background-size: 70%;
@@ -132,7 +132,7 @@ body{
 
 /*About Section----------------------------------*/
 
-#aboutsection-container{
+#aboutsection{
 	// background: linear-gradient(to bottom right,#ffb3b3, #ff0000);
 	background: linear-gradient(to bottom right,#FE8B4C, #FF514E);
 	padding-left: 50px;
@@ -163,7 +163,7 @@ body{
 
 /*Portfolio Section------------------------------------*/
 
-#portfoliosection-container{
+#portfoliosection{
 	padding: 30px 0px 40px 0px;
 	text-align: center;
 }
@@ -340,14 +340,14 @@ body{
 
 
 /*Contact Section-----------------------------------*/
-#contactsection-container{
+#contactsection{
 	padding-top: 5px;
 	padding-bottom: 30px;
 	background: linear-gradient(to bottom right,#595959, #262626);
 	color: white;
 }
 
-#contactsection-container h1{
+#contactsection h1{
 	text-align: center;
 	font-size: 6.5vmin;
 }
@@ -388,10 +388,10 @@ form{
 	margin-top: 20px;
 }
 
-#contactsection-container .col-xl-6{
+#contactsection .col-xl-6{
 }
 
-#contactsection-container .col-xl-6{
+#contactsection .col-xl-6{
 	padding: 0;
 
 	font-size: 20px;

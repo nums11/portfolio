@@ -1,359 +1,32 @@
 <!-- Page cover to blur background on project popups -->
 <div id="page-cover"></div>
 
-<!-- PROJECT POPUPS -->
+<!-- PROJECT POPUPS ---------------------------------------->
 
 <!-- Focus desktop project popup -->
 
-<div class="project-popup-desktop" id="focus-popup-desktop">
-
-	<!-- Image Carousel -->
-	<div id="focus-carousel-desktop" class="carousel slide" data-ride="carousel">
-  		<!-- Indicators -->
-  		<ul class="carousel-indicators">
-  			 <li data-target="#focus-carousel-desktop" data-slide-to="0" class="active"></li>
-  			 <li data-target="#focus-carousel-desktop" data-slide-to="1"></li>
-  			 <li data-target="#focus-carousel-desktop" data-slide-to="2"></li>
-  			 <li data-target="#focus-carousel-desktop" data-slide-to="3"></li>
-  		</ul>
-			
-  		<!-- The slideshow -->
-  		<div class="carousel-inner">
-  			<div class="carousel-item active">
-  			    <%= image_tag ("focus_pic1.png"), :class => "img-fluid" %> 
-  			</div>
-			
-  			<div class="carousel-item">
-   			   <%= image_tag ("focus_pic2.png"), :class => "img-fluid" %> 
-  			</div>
-			
-  			<div class="carousel-item">
-   			   <%= image_tag ("focus_pic3.png"), :class => "img-fluid" %> 
-  			 </div>
-
-  			<div class="carousel-item">
-   			   <%= image_tag ("focus_pic4.png"), :class => "img-fluid" %> 
-  			</div>
-  		</div>
-			
-  		<!-- Left and right controls -->
-  		<a class="carousel-control-prev" href="#focus-carousel-desktop" data-slide="prev">
-  			<span class="carousel-control-prev-icon"></span>
-  		</a>
-  		<a class="carousel-control-next" href="#focus-carousel-desktop" data-slide="next">
-  		  <span class="carousel-control-next-icon"></span>
-  		</a>
-	</div>
-
-	<!-- Focus Info -->
-
-	<div class="project-info-desktop" id="focus-info-desktop">
-			
-		<h1>Focus</h1>
-		<ul class="list-group">
-			<li class="list-group-item">Android Studio</li>
-			<li class="list-group-item">Java</li>
-			<li class="list-group-item">SQL</li>
-		</ul>
-		<p>Focus is an exciting, color-based arcade game built using the Android Studio framework and released
-through the Google Play Store. Focus uses a self-designed, dynamic algorithm that changes the
-speed and difficulty of the game as the user improves. It has a 5 star rating on the Google Play
-Store and multiple good reviews.</p>
-		<div class="view-site" id="focus-link">View Site</div>
-
-	</div>
-
-</div>
+<%= render '/projects/desktop/focus' %>
 
 <!-- Focus mobile project popup -->
 
-<div class="project-popup-mobile" id="focus-popup-mobile">
-
-	<!-- Focus Info -->
-
-	<div class="project-info-mobile" id="focus-info-mobile">
-			
-		<h1>Focus</h1>
-		<div class="exit">X</div>
-		<ul class="list-group">
-			<li class="list-group-item">Android Studio</li>
-			<li class="list-group-item">Java</li>
-			<li class="list-group-item">SQL</li>
-		</ul>
-		<p>Focus is an exciting, color-based arcade game built using the Android Studio framework and released
-through the Google Play Store. Focus uses a self-designed, dynamic algorithm that changes the
-speed and difficulty of the game as the user improves. It has a 5 star rating on the Google Play
-Store and multiple good reviews.</p>
-		<div class="view-site" id="focus-link">View Site</div>
-
-	</div>
+<%= render '/projects/mobile/focus' %>
 
 
-	<!-- Image Carousel -->
-	<div id="focus-carousel-mobile" class="carousel slide" data-ride="carousel">
-  		<!-- Indicators -->
-  		<ul class="carousel-indicators">
-  			 <li data-target="#focus-carousel-mobile" data-slide-to="0" class="active"></li>
-  			 <li data-target="#focus-carousel-mobile" data-slide-to="1"></li>
-  			 <li data-target="#focus-carousel-mobile" data-slide-to="2"></li>
-  			 <li data-target="#focus-carousel-mobile" data-slide-to="3"></li>
-  		</ul>
-			
-  		<!-- The slideshow -->
-  		<div class="carousel-inner">
-  			<div class="carousel-item active">
-  			    <%= image_tag ("focus_pic1.png"), :class => "img-fluid" %> 
-  			</div>
-			
-  			<div class="carousel-item">
-   			   <%= image_tag ("focus_pic2.png"), :class => "img-fluid" %> 
-  			</div>
-			
-  			<div class="carousel-item">
-   			   <%= image_tag ("focus_pic3.png"), :class => "img-fluid" %> 
-  			 </div>
+<!-- TITLE SECTION ----------------------------------------->
 
-  			<div class="carousel-item">
-   			   <%= image_tag ("focus_pic4.png"), :class => "img-fluid" %> 
-  			</div>
-  		</div>
-			
-  		<!-- Left and right controls -->
-  		<a class="carousel-control-prev" href="#focus-carousel-mobile" data-slide="prev">
-  			<span class="carousel-control-prev-icon"></span>
-  		</a>
-  		<a class="carousel-control-next" href="#focus-carousel-mobile" data-slide="next">
-  		  <span class="carousel-control-next-icon"></span>
-  		</a>
-	</div>
-
-</div>
-
-
-
-
-<!-- TITLE PAGE SECTION --------------------------------->
-
-<div id="titlesection-container">
-
-	<!-- Nav Bar-------------------------- -->
-	
-	<nav class="navbar navbar-light navbar-expand-xl bg-faded justify-content-center">
-
-		<!-- Logo -->
-    	<a href="/" class="navbar-brand d-flex mr-auto">Logo</a>
-
-    	<!-- Dropdown Button -->
-    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-        <span class="navbar-toggler-icon"></span>
-    	</button>
-
-    	<!-- Links -->
-    	<div class="collapse navbar-collapse w-100" id="collapsingNavbar">
-        	<ul class="navbar-nav w-100 justify-content-center">
-            	<li class="nav-item">
-                	<a class="nav-link" href="#aboutsection-container" id="about">About</a>
-            	</li>
-            	<li class="nav-item">
-                	<a class="nav-link" href="#portfoliosection-container" id="portfolio">Portfolio</a>
-            	</li>
-            	<li class="nav-item">
-                	<a class="nav-link" href="#contactsection-container" id="contact">Contact</a>
-            	</li>
-            	<li class="nav-item">
-                	<a class="nav-link" id="resume">Resume</a>
-            	</li>
-        	</ul>
-    	</div>
-
-	</nav>
-
-	<!-- main -------------------->
-	<div class="container-fluid" id="main">
-
-		<!-- Social Media Buttons Left Side -->
-			
-		<div class="btn-group-vertical container" id="	socialmedia-left">
-		  	<button type="button" class="btn btn-primary smlink smlink-vert" id="githublink">
-		 		<%= image_tag("GitHub-Mark-Light-32px.png") %>
-		  	</button>
-		  	<button type="button" class="btn btn-primary smlink smlink-vert" id="linkedinlink">
-		 		<%= image_tag("linkedinlogo.png") %>
-		  	</button>
-		  	<button type="button" class="btn btn-primary smlink smlink-vert" id="googleplaylink">
-		  		<%= image_tag("if_playstore_252084.png") %>
-		  	</button>
-		</div> 	 
-
-		<!-- Name and Descreption -->
-		<div id="info-area">
-			
-			<!-- Name -->
-	 			<div id="name">
-	 				<span class="letter">N</span><span class="letter">u</span><span class="letter">m</span><span class	="letter">f</span><span class="letter">o</span><span class="letter">r</span> <span class="letter">T</span><span class="letter">i</span><span class="letter">a</span><span class="letter">p</span><span class="letter">o</span>
-	 			</div>
-
-			<!-- Description -->
-			<div id="description"></div>
-
-		</div>
-
-	</div>	
-
-	<!-- Bottom	  -->
-
-	<div class="container-fluid" id="bottom">
-		
-		<!-- Social Media Buttons Bottom of page -->
-	 	 <div class="btn-group container" id="socialmedia-bottom">
-		  	<button type="button" class="btn btn-primary smlink" 		id="githublink">
-		 		<%= image_tag("GitHub-Mark-Light-32px.png") %>
-		  	</button>
-		  	<button type="button" class="btn btn-primary smlink" 		id="linkedinlink">
-		 		<%= image_tag("linkedinlogo.png") %>
-		  	</button>
-		  	<button type="button" class="btn btn-primary smlink" 		id="googleplaylink">
-		  		<%= image_tag("if_playstore_252084.png") %>
-		  	</button>
-		</div> 	 
-
-	</div>
-
-
-</div>
-
-
-
+<%= render '/layouts/title' %>
 
 <!-- ABOUT SECTION ----------------------------------------->
 
-<div class="container-fluid" id="aboutsection-container">
-	
-	<div class="row">
+<%= render '/layouts/about' %>
 
-		<div class="col-xl-6">
-			
-			<h1 id="aboutsection-greeting">Hi, I'm Numfor, nice to meet you.</h1>
-			<p id="aboutsection-description">I'm currently a rising sophomore at Rensselaer Polytechnic Institute. I'm focused, driven, and constantly improving my skills as a developer. I enjoy taking on challenging projects and finding creative solutions. Take a look at some of my skills:
+<!-- PORTFOLIO SECTION ------------------------------------->
 
-		</div>
+<%= render '/layouts/portfolio' %>
 
-		<div class="col-xl-6">
+<!-- CONTACT SECTION --------------------------------------->
 
-			<!-- Tag Cloud -->
-
-    		<div id="tagcloud-container">
-    		  <canvas id="tagcloud"></canvas>
-    		</div>
-    		<div id="tags">
-    		  <ul>
-    		    <li><a>HTML</a></li>
-    		    <li><a>CSS</a></li>
-    		    <li><a>JavaScript</a></li>
-    		    <li><a>jQuery</a></li>
-    		    <li><a>Vue.js</a></li>
-    		    <li><a>Ruby on Rails</a></li>
-    		    <li><a>Git</a></li>
-    		    <li><a>PHP</a></li>
-    		    <li><a>Bash</a></li>
-    		    <li><a>C</a></li>
-    		    <li><a>C++</a></li>
-    		    <li><a>Ruby</a></li>
-    		    <li><a>Java</a></li>
-    		    <li><a>Android Studio</a></li>
-    		    <li><a>Bootstrap</a></li>
-    		    <li><a>PHP</a></li>
-    		    <li><a>SQL</a></li>
-    		    <li><a>MIPS</a></li>
-    		  </ul>
-    		</div>
-		
-		</div>
-		
-	</div>
-
-</div>
-
-
-
-
-<!-- Portfolio Section--------------------------------------->
-
-<div class="container-fluid" id="portfoliosection-container">
-	
-	<h1 id="portfoliosection-greeting">Projects</h1>
-	<div id="underline"></div>
-
-	<div class="project" id="focus-container">
-		
-		<div class="projectpicture">
-			<%= image_tag ("focus_project.png"), :class=>"img-thumbnail" %>
-		</div>
-
-		<div class="projectcover">
-			<div class="project-name">Focus</div>
-			<div class="learn-more" id="focus-learn-more">Learn More</div>
-		</div>
-
-	</div>
-
-	<h1 id="coming-soon">More Projects Coming Soon!</h1>
-
-
-</div>
-
-
-
-
-<!-- Contact Section---------------------------------------->
-
-<div class="container-fluid" id="contactsection-container">
-	
-	<h1>Contact</h1>
-
-	<div id="contact-underline"></div>
-
-	<div class="row" id="name-email">
-		
-		<div class="col-xl-6 col-xl-offset-2">
-
-			<div class="form-container">
-				
-				<input type="text" placeholder="Name" class="contact-info">	
-
-			</div>
-			
-
-		</div>
-
-		<div class="divider"></div>
-
-		<div class="col-xl-6 col-xl-offset-2" id="rightside">
-
-			<div class="form-container">
-				
-				<input type="email" placeholder="Email" class="contact-info">
-
-			</div>
-			
-
-		</div>
-
-	</div>
-
-	<div class="row" id="message">
-		
-		<div class="col-xl-12">
-			
-			<textarea placeholder="Type Message Here"></textarea>
-
-		</div>
-
-	</div>
-
-	<div id="submit-btn">Submit</div>
-
-</div>
+<%= render '/layouts/contact' %>
 
 
 
@@ -399,7 +72,7 @@ Store and multiple good reviews.</p>
 
 	//Maintain container heights when window is resized
 	$(window).resize(function(){
-		$("#titlesection-container").height($(window).height());
+		$("#titlesection").height($(window).height());
 		$(".project").height($(".projectpicture").height());
 		$(".projectcover").width($(".projectpicture").width());
 		$(".projectcover").height($(".projectpicture").height());
@@ -423,7 +96,7 @@ Store and multiple good reviews.</p>
     		$(".col-xl-12").css("padding-left","0px");
     		$("#submit-btn").css("width","60%");
     		$(".navbar-toggler").show();
-    		$("#titlesection-container").css({"background-size":"90%", "background-position":"0% 100%"});
+    		$("#titlesection").css({"background-size":"90%", "background-position":"0% 100%"});
 
   		} else {
     		$('.btn-group-vertical').show();
@@ -438,7 +111,7 @@ Store and multiple good reviews.</p>
     		$("#message").css("width","40%");
     		$(".col-xl-12").css("padding-left","9px");
     		$("#submit-btn").css("width","20%");
-    		$("#titlesection-container").css({"background-size":"70%", "background-position":"40%"});
+    		$("#titlesection").css({"background-size":"70%", "background-position":"40%"});
   		}
 
 
@@ -498,7 +171,7 @@ Store and multiple good reviews.</p>
   	});
 
 	//Set title section container height to window height
-	$("#titlesection-container").height($(window).height());
+	$("#titlesection").height($(window).height());
 
 	//Hide Menu when link is clicked in mobile version
 	$(".nav-link").click(function(){
