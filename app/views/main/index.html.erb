@@ -1,6 +1,10 @@
 <!-- Page cover to blur background on project popups -->
 <div id="page-cover"></div>
 
+<!-- Game html -->
+
+<%= render '/game/main' %>
+
 <!-- PROJECT POPUPS ---------------------------------------->
 
 <!-- Focus desktop project popup -->
@@ -34,6 +38,7 @@
 <!-- JAVASCRIPT -------------------------------------------->
 
 <script type="text/javascript">
+
 	/*Beginning Animation----------------------------*/
 
 	//Hide Nav bar and buttons
@@ -81,6 +86,7 @@
 		$('.project-popup-mobile').height($(window).height());
     	$('.project-popup-mobile').width($(window).width());
     	$('#main').css("margin-top",$(".navbar").height());
+    	$("#game-container").css("height",$(window).height());
 
 		if ($(window).width() < 1025) {
     		$('.btn-group-vertical').hide();
@@ -97,7 +103,9 @@
     		$("#submit-btn").css("width","60%");
     		$(".navbar-toggler").show();
     		$("#titlesection").css({"background-size":"90%", "background-position":"0% 100%"});
-
+    		$("#name").css("padding-top","100px");
+    		$("#logo-img").attr("src","logo_drawing_64_cropped.png");
+    		// $("#click-me").hide();
   		} else {
     		$('.btn-group-vertical').show();
     		$('.btn-group').hide();
@@ -112,6 +120,9 @@
     		$(".col-xl-12").css("padding-left","9px");
     		$("#submit-btn").css("width","20%");
     		$("#titlesection").css({"background-size":"70%", "background-position":"40%"});
+    		$("#name").css("padding-top","140px");
+    		$("#logo-img").attr("src","logo_drawing_100_cropped.png");
+    		// $("#click-me").show();
   		}
 
 
@@ -353,5 +364,67 @@
 		$("#submit-btn").animate({"background-color":"#404040"}, 250);
 		$("#submit-btn").css("color","white");
 	});
+
+
+
+	/*Game---------------------------------------------*/
+
+	$("#click-me").click(function(){
+
+		//Scroll to top and hide everything
+		// $(window).scrollTop(0);
+		// $("#titlesection").fadeOut(1000);
+		// $("#aboutsection").fadeOut(1000);
+		// $("#portfoliosection").fadeOut(1000);
+		// $("#contactsection").fadeOut(1000);
+
+		// //Show game container
+		// $("#game-container").delay(1000).fadeIn(1000);
+		$("#game-container").css("height",$(window).height());
+
+
+
+	});
+
+		function add_div(){
+			$('<div class="game-area"><%= escape_javascript render "/game/letter_area" %><%= escape_javascript render "/game/letter_area" %><%= escape_javascript render "/game/letter_area" %><%= escape_javascript render "/game/letter_area" %><%= escape_javascript render "/game/letter_area" %></div>').insertAfter(".game-area:last");
+		}
+
+		//Animate game-area
+		var counter = 0;
+		// function move_game_area(){
+		// 	counter++;
+		// 	add_div();
+		// 	console.log("yes");
+		// 	$(".game-area").animate({
+		// 		left: '-=' + $(window).width()
+		// 	}, 10000, "linear", function(){
+		// 		if(counter < 10){
+		// 		add_div();
+		// 		move_game_area();
+		// 		}
+		// 	});
+		// }
+
+		// move_game_area();
+		// while(counter < 10){
+		// 	add_div();
+		// 	$("#first").animate({
+		// 		marginLeft: '-=' + $(window).width()
+		// 	}, 2000, "linear", {});
+		// 	counter++;
+		// }
+
+
+		// if($("#game-area").is(':animated')){
+		// 	console.log("yes");
+		// }
+
+		// while($("#game-area").is(':animated')){
+		// 	console.log("I'm animated");
+		// 	break;
+		// }
+
+
 
 </script>

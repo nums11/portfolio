@@ -1,0 +1,139 @@
+<!-- Array for the letter of my name -->
+<% letters = ["N","U","M","F","O","R","T","I","A","P","O"] %>
+<div class="letter-area">
+
+	<div class="letter-section" id="topsection">
+
+		<% r1 = rand(0..3) %>
+
+		<!-- Neither div gets a letter -->
+		<% if r1 == 0 %>
+				
+			<div class="game-letter" id="leftletter"></div>
+	
+			<div class="game-letter" id="rightletter"></div>
+
+		<!-- Left div gets a letter -->
+		<% elsif r1 == 1 %>
+
+			<div class="game-letter" id="leftletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+	
+			<div class="game-letter" id="rightletter"></div>
+
+		<!-- Right div gets a letter -->
+		<% elsif r1 == 2 %>
+
+			<div class="game-letter" id="leftletter"></div>
+	
+			<div class="game-letter" id="rightletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+
+		<!-- Both divs gets a letter -->
+		<% elsif r1 == 3 %>
+
+			<div class="game-letter" id="leftletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+	
+			<div class="game-letter" id="rightletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+
+		<% end %>
+
+	</div>
+
+	<div class="letter-section" id="middlesection">
+				
+
+		<% r1 = rand(0..3) %>
+
+		<!-- Neither div gets a letter -->
+		<% if r1 == 0 %>
+				
+			<div class="game-letter" id="leftletter"></div>
+	
+			<div class="game-letter" id="rightletter"></div>
+
+		<!-- Left div gets a letter -->
+		<% elsif r1 == 1 %>
+
+			<div class="game-letter" id="leftletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+	
+			<div class="game-letter" id="rightletter"></div>
+
+		<!-- Right div gets a letter -->
+		<% elsif r1 == 2 %>
+
+			<div class="game-letter" id="leftletter"></div>
+	
+			<div class="game-letter" id="rightletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+
+		<!-- Both divs gets a letter -->
+		<% elsif r1 == 3 %>
+
+			<div class="game-letter" id="leftletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+	
+			<div class="game-letter" id="rightletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+
+		<% end %>
+
+	</div>
+
+	<div class="letter-section" id="bottomsection">
+				
+
+		<% r1 = rand(0..3) %>
+
+		<!-- Neither div gets a letter -->
+		<% if r1 == 0 %>
+				
+			<div class="game-letter" id="leftletter"></div>
+	
+			<div class="game-letter" id="rightletter"></div>
+
+		<!-- Left div gets a letter -->
+		<% elsif r1 == 1 %>
+
+			<div class="game-letter" id="leftletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+	
+			<div class="game-letter" id="rightletter"></div>
+
+		<!-- Right div gets a letter -->
+		<% elsif r1 == 2 %>
+
+			<div class="game-letter" id="leftletter"></div>
+	
+			<div class="game-letter" id="rightletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+
+		<!-- Both divs gets a letter -->
+		<% elsif r1 == 3 %>
+
+			<div class="game-letter" id="leftletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+	
+			<div class="game-letter" id="rightletter">
+				<span><%= letters[rand(0..11)] %></span>
+			</div>
+
+		<% end %>
+
+	</div>
+
+</div>

@@ -11,10 +11,11 @@ body{
 	background-position: 40%;
 }
 
-
 //Navbar
+
 .navbar{
 	padding-top: 20px;
+	padding-bottom: 0px;
 	font-size: 18px;
 	background-color: white;
 	position: fixed;
@@ -62,7 +63,6 @@ body{
 
 .smlink{
 	border-radius: 0px !important;
-	// background: url('app/assets/images/GitHub-Mark-32px.png');
 }
 
 #githublink, #githublink:hover{
@@ -99,7 +99,7 @@ body{
 }
 
 #description{
-	height: 30%;
+	height: 15%;
 	margin: auto;
 }
 
@@ -109,6 +109,22 @@ body{
 	font-size: 2.25vmin;
 	// font-size: 1.6vmax;
 	display: inline;
+}
+
+#click-me{
+	display: none;
+	// border: #4dff88 solid;
+	background-color: #4dff88;
+	// background: linear-gradient(to bottom right,#FE8B4C, #FF514E);
+	height: 10%;
+	width: 200px;
+	font-size: 20px;
+	box-shadow: 0px 8px 0px 0px #999;
+}
+
+#click-me:active{
+  box-shadow: 0 8px #666;
+  transform: translateY(4px);
 }
 
 
@@ -458,4 +474,63 @@ button:focus {
 
 
 
+/*Game----------------------------------------------*/
 
+#game-container{
+	border: red solid;
+	display: none;
+	padding: 0;
+	position: relative;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+#header{
+	border: blue solid;
+	height: 10%;
+}
+
+.game-area{
+	height: 80%;
+	border: brown solid thick;
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	width: 100%;
+	// left: 250px;
+}
+
+.letter-area{
+	width: 19.8%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: bottom;
+	overflow: visible;
+}
+
+.letter-section{
+	height: 33.3%;
+}
+
+.game-letter{
+	height: 100%;
+	width: 49%;
+	display: inline-block;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.game-letter span{
+	font-size: 140px;
+}
+
+#instruction-text{
+	font-size: 100px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+#footer{
+	border: green solid;
+	height: 10%;
+}
