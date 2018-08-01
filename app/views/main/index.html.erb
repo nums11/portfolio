@@ -241,8 +241,30 @@
 		}
 	});
 
+	$("#githublink-bottom").click(function(){
+		var win = window.open("https://github.com/nums11");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});
+
 	//Open LinkedIn Link
 	$("#linkedinlink").click(function(){
+		var win = window.open("https://www.linkedin.com/in/numfor-tiapo-578b9b15a");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});	
+
+	$("#linkedinlink-bottom").click(function(){
 		var win = window.open("https://www.linkedin.com/in/numfor-tiapo-578b9b15a");
 		if (win) {
 		    //Browser has allowed it to be opened
@@ -264,6 +286,18 @@
 		    alert('Please allow popups for this website');
 		}
 	});
+
+	$("#googleplaylink-bottom").click(function(){
+		var win = window.open("https://play.google.com/store/apps/developer?id=Nums");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});
+
 
 
 	/*About Section-----------------------------------*/
@@ -350,7 +384,16 @@
 		}
 	});
 
-
+	$("#focus-link-mobile").click(function(){
+		var win = window.open("https://play.google.com/store/apps/details?id=com.games.numsm_000.focus");
+		if (win) {
+		    //Browser has allowed it to be opened
+		    win.focus();
+		} else {
+		    //Browser has blocked it
+		    alert('Please allow popups for this website');
+		}
+	});
 
 
 	/*Contact Section---------------------------------*/
