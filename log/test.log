@@ -1,0 +1,1222 @@
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+MainControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+MessageTest: test_responds_to_name,_email_and_body
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+MainControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+MessageTest: test_responds_to_name,_email_and_body
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+MainControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+MessageTest: test_should_be_valid_when_all_attributes_are_set
+-------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+MainControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------------
+MessageTest: test_name,_email_and_body_are_required_by_law
+----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+MainControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------------
+MessageTest: test_name,_email_and_body_are_required_by_law
+----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------------
+MessageTest: test_name,_email_and_body_are_required_by_law
+----------------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 16:52:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 16:52:48 -0400
+Processing by MessagesController#new as HTML
+Completed 406 Not Acceptable in 12ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 16:53:59 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 276ms (Views: 272.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 16:54:51 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 16:56:03 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 16:56:37 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 115ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 16:59:23 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 123ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 16:59:34 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 111ms (Views: 106.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+MessagesControllerTest: test_GET_new
+------------------------------------
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 17:00:05 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 111ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:05:17 -0400
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:05:56 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 12ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:06:24 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+Redirected to http://www.example.com/contact-me
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 17:06:24 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+MessagesControllerTest: test_invalid_POST_create
+------------------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:07:16 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"", "email"=>"", "body"=>""}}
+Redirected to http://www.example.com/contact-me
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+MessagesControllerTest: test_invalid_POST_create
+------------------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:08:22 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"", "email"=>"", "body"=>""}}
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 116ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+MessagesControllerTest: test_invalid_POST_create
+------------------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:09:21 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"", "email"=>"", "body"=>""}}
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 131ms (Views: 123.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+MessagesControllerTest: test_invalid_POST_create
+------------------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:12:14 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"", "email"=>"", "body"=>""}}
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 118ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------------
+MessageTest: test_name,_email_and_body_are_required_by_law
+----------------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+MessagesControllerTest: test_invalid_POST_create
+------------------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:12:23 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"", "email"=>"", "body"=>""}}
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 131ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+MessageMailer#contact_me: processed outbound mail in 0.1ms
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.4ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 7.0ms
+Sent mail to to@example.org (5.2ms)
+Date: Fri, 29 Jun 2018 17:17:54 -0400
+From: from@example.com
+To: to@example.org
+Message-ID: <5b36a202aa5e3_31c12b13adbb2f4c98479@nums-ubuntu.mail>
+Subject: Contact me
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a202a98b9_31c12b13adbb2f4c98328";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a202a98b9_31c12b13adbb2f4c98328
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Message#contact_me
+
+Hi, find me in app/views/message_mailer/contact_me.text.erb
+
+
+----==_mimepart_5b36a202a98b9_31c12b13adbb2f4c98328
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Message#contact_me</h1>
+
+<p>
+  Hi, find me in app/views/message_mailer/contact_me.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36a202a98b9_31c12b13adbb2f4c98328--
+
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.4ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 7.1ms
+Sent mail to to@example.org (2.5ms)
+Date: Fri, 29 Jun 2018 17:18:55 -0400
+From: from@example.com
+To: to@example.org
+Message-ID: <5b36a23fb1891_320e2b19c6adef346134f@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a23fb127c_320e2b19c6adef346129d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a23fb127c_320e2b19c6adef346129d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Message#contact_me
+
+Hi, find me in app/views/message_mailer/contact_me.text.erb
+
+
+----==_mimepart_5b36a23fb127c_320e2b19c6adef346129d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Message#contact_me</h1>
+
+<p>
+  Hi, find me in app/views/message_mailer/contact_me.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36a23fb127c_320e2b19c6adef346129d--
+
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.3ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 6.2ms
+Sent mail to numsmt2@gmail.com (2.4ms)
+Date: Fri, 29 Jun 2018 17:20:52 -0400
+From: from@example.com
+To: numsmt2@gmail.com
+Message-ID: <5b36a2b42dc0a_32402afbede0ef486569d@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a2b42d5f1_32402afbede0ef48655c2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a2b42d5f1_32402afbede0ef48655c2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Message#contact_me
+
+Hi, find me in app/views/message_mailer/contact_me.text.erb
+
+
+----==_mimepart_5b36a2b42d5f1_32402afbede0ef48655c2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Message#contact_me</h1>
+
+<p>
+  Hi, find me in app/views/message_mailer/contact_me.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36a2b42d5f1_32402afbede0ef48655c2--
+
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.4ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 10.7ms
+Sent mail to numsmt2@gmail.com (2.6ms)
+Date: Fri, 29 Jun 2018 17:21:46 -0400
+From: from@example.com
+To: numsmt2@gmail.com
+Message-ID: <5b36a2eaf2ffe_32652b250e44ef54807a@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a2eaf2a1b_32652b250e44ef5480669";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a2eaf2a1b_32652b250e44ef5480669
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Message#contact_me
+
+Hi, find me in app/views/message_mailer/contact_me.text.erb
+
+
+----==_mimepart_5b36a2eaf2a1b_32652b250e44ef5480669
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Message#contact_me</h1>
+
+<p>
+  Hi, find me in app/views/message_mailer/contact_me.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36a2eaf2a1b_32652b250e44ef5480669--
+
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.4ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 6.4ms
+Sent mail to numsmt2@gmail.com (2.3ms)
+Date: Fri, 29 Jun 2018 17:36:05 -0400
+From: anna@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a6457d640_33092ab4fbeaaf4415625@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a6457d047_33092ab4fbeaaf44155b5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a6457d047_33092ab4fbeaaf44155b5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Message#contact_me
+
+Hi, find me in app/views/message_mailer/contact_me.text.erb
+
+
+----==_mimepart_5b36a6457d047_33092ab4fbeaaf44155b5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Message#contact_me</h1>
+
+<p>
+  Hi, find me in app/views/message_mailer/contact_me.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36a6457d047_33092ab4fbeaaf44155b5--
+
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.4ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 6.1ms
+Sent mail to numsmt2@gmail.com (2.7ms)
+Date: Fri, 29 Jun 2018 17:36:23 -0400
+From: from@example.com
+To: numsmt2@gmail.com
+Message-ID: <5b36a657c549b_33212afa88956f489377@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a657c4dba_33212afa88956f489218";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a657c4dba_33212afa88956f489218
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Message#contact_me
+
+Hi, find me in app/views/message_mailer/contact_me.text.erb
+
+
+----==_mimepart_5b36a657c4dba_33212afa88956f489218
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Message#contact_me</h1>
+
+<p>
+  Hi, find me in app/views/message_mailer/contact_me.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36a657c4dba_33212afa88956f489218--
+
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.3ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 6.8ms
+Sent mail to numsmt2@gmail.com (2.4ms)
+Date: Fri, 29 Jun 2018 17:37:32 -0400
+From: anna@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a69c130ed_33422af73991af2c1554b@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a69c12ae7_33422af73991af2c15412";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a69c12ae7_33422af73991af2c15412
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Message#contact_me
+
+Hi, find me in app/views/message_mailer/contact_me.text.erb
+
+
+----==_mimepart_5b36a69c12ae7_33422af73991af2c15412
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Message#contact_me</h1>
+
+<p>
+  Hi, find me in app/views/message_mailer/contact_me.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36a69c12ae7_33422af73991af2c15412--
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.3ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 6.4ms
+Sent mail to numsmt2@gmail.com (2.4ms)
+Date: Fri, 29 Jun 2018 17:39:13 -0400
+From: anna@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a7019d4be_33722ad338ea2f5090446@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a7019ceae_33722ad338ea2f5090379";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a7019ceae_33722ad338ea2f5090379
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+hello, how are you doing?
+
+
+----==_mimepart_5b36a7019ceae_33722ad338ea2f5090379
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    hello, how are you doing?
+  </body>
+</html>
+
+----==_mimepart_5b36a7019ceae_33722ad338ea2f5090379--
+
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+MessageMailerTest: test_contact_me
+----------------------------------
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.3ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.1ms)
+MessageMailer#contact_me: processed outbound mail in 6.2ms
+Sent mail to numsmt2@gmail.com (2.4ms)
+Date: Fri, 29 Jun 2018 17:41:15 -0400
+From: anna@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a77b76092_33a72b2aa19f8f4889915@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a77b75a76_33a72b2aa19f8f4889838";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a77b75a76_33a72b2aa19f8f4889838
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+hello, how are you doing?
+
+
+----==_mimepart_5b36a77b75a76_33a72b2aa19f8f4889838
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    hello, how are you doing?
+  </body>
+</html>
+
+----==_mimepart_5b36a77b75a76_33a72b2aa19f8f4889838--
+
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:41:21 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+Redirected to http://www.example.com/contact-me
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:42:36 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:42:59 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:43:25 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.3ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 15.7ms
+Sent mail to numsmt2@gmail.com (2.4ms)
+Date: Fri, 29 Jun 2018 17:43:25 -0400
+From: cornholio@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a7fd59583_340d2b0ffe55ef541614b@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a7fd58ee9_340d2b0ffe55ef5416067";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a7fd58ee9_340d2b0ffe55ef5416067
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+hai
+
+
+----==_mimepart_5b36a7fd58ee9_340d2b0ffe55ef5416067
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    hai
+  </body>
+</html>
+
+----==_mimepart_5b36a7fd58ee9_340d2b0ffe55ef5416067--
+
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:44:09 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.4ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.1ms)
+MessageMailer#contact_me: processed outbound mail in 16.2ms
+Sent mail to numsmt2@gmail.com (2.6ms)
+Date: Fri, 29 Jun 2018 17:44:09 -0400
+From: cornholio@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a829f202a_34552b045ab1ef3489450@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a829f18c6_34552b045ab1ef34893a3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a829f18c6_34552b045ab1ef34893a3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+hai
+
+
+----==_mimepart_5b36a829f18c6_34552b045ab1ef34893a3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    hai
+  </body>
+</html>
+
+----==_mimepart_5b36a829f18c6_34552b045ab1ef34893a3--
+
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:49:50 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.3ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 15.7ms
+Sent mail to numsmt2@gmail.com (2.4ms)
+Date: Fri, 29 Jun 2018 17:49:50 -0400
+From: cornholio@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a97e1dac3_34a02b02743c4f3c2658e@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a97e1d438_34a02b02743c4f3c264d7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a97e1d438_34a02b02743c4f3c264d7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+hai
+
+
+----==_mimepart_5b36a97e1d438_34a02b02743c4f3c264d7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    hai
+  </body>
+</html>
+
+----==_mimepart_5b36a97e1d438_34a02b02743c4f3c264d7--
+
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:50:04 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.3ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 16.4ms
+Sent mail to numsmt2@gmail.com (2.5ms)
+Date: Fri, 29 Jun 2018 17:50:04 -0400
+From: cornholio@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a98c372eb_34ba2ac5fddf4f383164c@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a98c36c1a_34ba2ac5fddf4f383153e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a98c36c1a_34ba2ac5fddf4f383153e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+hai
+
+
+----==_mimepart_5b36a98c36c1a_34ba2ac5fddf4f383153e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    hai
+  </body>
+</html>
+
+----==_mimepart_5b36a98c36c1a_34ba2ac5fddf4f383153e--
+
+Redirected to http://www.example.com/contact-me
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 17:50:04 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 115ms (Views: 114.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------
+MainControllerTest: test_GET_new
+--------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+MessagesControllerTest: test_POST_create
+----------------------------------------
+Started POST "/contact-me" for 127.0.0.1 at 2018-06-29 17:50:39 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"message"=>{"name"=>"cornholio", "email"=>"cornholio@example.org", "body"=>"hai"}}
+  Rendering message_mailer/contact_me.html.erb within layouts/mailer
+  Rendered message_mailer/contact_me.html.erb within layouts/mailer (0.4ms)
+  Rendering message_mailer/contact_me.text.erb within layouts/mailer
+  Rendered message_mailer/contact_me.text.erb within layouts/mailer (0.2ms)
+MessageMailer#contact_me: processed outbound mail in 16.7ms
+Sent mail to numsmt2@gmail.com (2.7ms)
+Date: Fri, 29 Jun 2018 17:50:39 -0400
+From: cornholio@example.org
+To: numsmt2@gmail.com
+Message-ID: <5b36a9afdc424_34dc2af184a08f5c4589f@nums-ubuntu.mail>
+Subject: Message from www.murdo.ch
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36a9afdbcfc_34dc2af184a08f5c45719";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36a9afdbcfc_34dc2af184a08f5c45719
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+hai
+
+
+----==_mimepart_5b36a9afdbcfc_34dc2af184a08f5c45719
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    hai
+  </body>
+</html>
+
+----==_mimepart_5b36a9afdbcfc_34dc2af184a08f5c45719--
+
+Redirected to http://www.example.com/contact-me
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms)
+Started GET "/contact-me" for 127.0.0.1 at 2018-06-29 17:50:39 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 123ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m

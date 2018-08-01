@@ -1,0 +1,9 @@
+I"ž(function() {
+  $(document).on('turbolinks:load', function() {});
+
+  if ($('meta[name=psj]').attr('controller') !== 'main') {
+    return;
+  }
+
+}).call(this);
+:ET

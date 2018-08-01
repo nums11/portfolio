@@ -1,0 +1,16 @@
+I"(function() {
+  $(document).on('turbolinks:load', function() {});
+
+  if ($('meta[name=psj]').attr('controller') !== 'main') {
+    return;
+  }
+
+  $('#link').hover(function() {
+    return $(this).css({
+      "color": "color",
+      "blue": "blue"
+    });
+  });
+
+}).call(this);
+:ET
