@@ -1,5 +1,4 @@
 require 'sendgrid-ruby'
-include SendGrid
 
 class MainController < ApplicationController
   def index
