@@ -43343,3 +43343,126 @@ TypeError (no implicit conversion of nil into String):
   
 app/controllers/main_controller.rb:45:in `new'
 app/controllers/main_controller.rb:45:in `email'
+Started GET "/email" for 127.0.0.1 at 2018-08-03 19:05:29 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 493ms (Views: 139.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-03 19:05:31 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.2ms)
+  Rendered projects/desktop/_focus.html.erb (1.9ms)
+  Rendered projects/mobile/_focus.html.erb (0.9ms)
+  Rendered layouts/_title.html.erb (1.7ms)
+  Rendered layouts/_about.html.erb (0.2ms)
+  Rendered layouts/_portfolio.html.erb (0.6ms)
+  Rendered layouts/_contact.html.erb (0.2ms)
+  Rendered game/_letter_area.html.erb (0.5ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered main/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-03 19:08:05 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.1ms)
+  Rendered projects/desktop/_focus.html.erb (90.2ms)
+  Rendered projects/mobile/_focus.html.erb (1.2ms)
+  Rendered layouts/_title.html.erb (2.4ms)
+  Rendered layouts/_about.html.erb (0.2ms)
+  Rendered layouts/_portfolio.html.erb (0.7ms)
+  Rendered layouts/_contact.html.erb (0.2ms)
+  Rendered game/_letter_area.html.erb (0.7ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered main/index.html.erb within layouts/application (101.7ms)
+Completed 200 OK in 137ms (Views: 132.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/email" for 127.0.0.1 at 2018-08-03 19:08:16 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 450ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-03 19:08:19 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.2ms)
+  Rendered projects/desktop/_focus.html.erb (2.5ms)
+  Rendered projects/mobile/_focus.html.erb (1.0ms)
+  Rendered layouts/_title.html.erb (1.8ms)
+  Rendered layouts/_about.html.erb (0.2ms)
+  Rendered layouts/_portfolio.html.erb (0.5ms)
+  Rendered layouts/_contact.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.5ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered main/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-03 19:11:53 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.2ms)
+  Rendered projects/desktop/_focus.html.erb (107.8ms)
+  Rendered projects/mobile/_focus.html.erb (0.9ms)
+  Rendered layouts/_title.html.erb (1.7ms)
+  Rendered layouts/_about.html.erb (0.2ms)
+  Rendered layouts/_portfolio.html.erb (0.5ms)
+  Rendered layouts/_contact.html.erb (0.2ms)
+  Rendered game/_letter_area.html.erb (0.5ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered main/index.html.erb within layouts/application (117.6ms)
+Completed 200 OK in 136ms (Views: 131.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/email" for 127.0.0.1 at 2018-08-03 19:12:02 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/email" for 127.0.0.1 at 2018-08-03 19:12:24 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 136ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-03 19:12:28 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.2ms)
+  Rendered projects/desktop/_focus.html.erb (1.9ms)
+  Rendered projects/mobile/_focus.html.erb (0.8ms)
+  Rendered layouts/_title.html.erb (1.7ms)
+  Rendered layouts/_about.html.erb (0.2ms)
+  Rendered layouts/_portfolio.html.erb (0.7ms)
+  Rendered layouts/_contact.html.erb (0.3ms)
+  Rendered game/_letter_area.html.erb (0.7ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered main/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
