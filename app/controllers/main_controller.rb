@@ -1,4 +1,5 @@
 require 'sendgrid-ruby'
+include SendGrid
 
 class MainController < ApplicationController
   def index
@@ -37,7 +38,7 @@ class MainController < ApplicationController
   	subject = 'WEBSITE MESSAGE'
   	to = SendGrid::Email.new(email: 'numsmt2@gmail.com')
   	content = Content.new(type: 'text/plain', value: 'Message From Website!')
-  	mail = Mail.new(from, subject, to, content)
+  	mail = SendGrid::Mail.new(from, subject, to, content)
   	# puts JSON.pretty_generate(mail.to_json)
   	puts mail.to_json
 	
