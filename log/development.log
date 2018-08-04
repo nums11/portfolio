@@ -43644,3 +43644,33 @@ Processing by MainController#email as HTML
 Completed 200 OK in 584ms (Views: 37.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/email" for 127.0.0.1 at 2018-08-03 20:56:02 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 353ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/email" for 127.0.0.1 at 2018-08-03 20:56:09 -0400
+Processing by MainController#email as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant MainController::Content):
+  
+app/controllers/main_controller.rb:40:in `email'
+Started GET "/email" for 127.0.0.1 at 2018-08-03 20:56:24 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 502ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/email" for 127.0.0.1 at 2018-08-03 20:56:41 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 336ms (Views: 134.0ms | ActiveRecord: 0.0ms)
+
+

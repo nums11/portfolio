@@ -37,7 +37,7 @@ class MainController < ApplicationController
 	from = SendGrid::Email.new(email: 'test@example.com')
   	subject = 'WEBSITE MESSAGE'
   	to = SendGrid::Email.new(email: 'numsmt2@gmail.com')
-  	content = Content.new(type: 'text/plain', value: 'Message From Website!')
+  	content = SendGrid::Content.new(type: 'text/plain', value: 'This is a message from your portfolio website!')
   	mail = SendGrid::Mail.new(from, subject, to, content)
   	# puts JSON.pretty_generate(mail.to_json)
   	puts mail.to_json
