@@ -43674,3 +43674,17 @@ Processing by MainController#email as HTML
 Completed 200 OK in 336ms (Views: 134.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/email" for 127.0.0.1 at 2018-08-03 21:04:31 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 556ms (Views: 165.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/email" for 127.0.0.1 at 2018-08-03 21:04:33 -0400
+Processing by MainController#email as HTML
+  Rendering main/email.html.erb within layouts/application
+  Rendered main/email.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 345ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
