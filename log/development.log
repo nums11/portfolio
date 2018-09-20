@@ -43688,3 +43688,197 @@ Processing by MainController#email as HTML
 Completed 200 OK in 345ms (Views: 33.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:07:31 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.2ms)
+  Rendered projects/desktop/_focus.html.erb (239.8ms)
+  Rendered projects/mobile/_focus.html.erb (1.4ms)
+  Rendered layouts/_title.html.erb (1.9ms)
+  Rendered layouts/_about.html.erb (0.2ms)
+  Rendered layouts/_portfolio.html.erb (0.5ms)
+  Rendered layouts/_contact.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.5ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered game/_letter_area.html.erb (0.0ms)
+  Rendered main/index.html.erb within layouts/application (252.7ms)
+Completed 200 OK in 286ms (Views: 279.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:09:48 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/nums/portfolio/app/views/main/index.html.erb:38: syntax error, unexpected '<'
+<!-- JAVASCRIPT ---------------
+ ^
+/home/nums/portfolio/app/views/main/index.html.erb:38: syntax error, unexpected unary-, expecting keyword_do or '{' or '('
+<!-- JAVASCRIPT -------------------------------
+                 ^
+/home/nums/portfolio/app/views/main/index.html.erb:38: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+/home/nums/portfolio/app/views/main/index.html.erb:42: target of repeat operator is not specified: /*Beginning Animation----------------------------*/
+/home/nums/portfolio/app/views/main/index.html.erb:44: unknown regexp options - Hd
+/home/nums/portfolio/app/views/main/index.html.erb:44: syntax error, unexpected tCONSTANT, expecting ')'
+	//Hide Nav bar and buttons
+	          ^
+/home/nums/portfolio/app/views/main/index.html.erb:45: `$(' is not allowed as a global variable name
+/home/nums/portfolio/app/views/main/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+	$(".navbar-nav").hide();
+	 ^):
+  
+app/views/main/index.html.erb:38: syntax error, unexpected '<'
+app/views/main/index.html.erb:38: syntax error, unexpected unary-, expecting keyword_do or '{' or '('
+app/views/main/index.html.erb:38: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/main/index.html.erb:42: target of repeat operator is not specified: /*Beginning Animation----------------------------*/
+app/views/main/index.html.erb:44: unknown regexp options - Hd
+app/views/main/index.html.erb:44: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/main/index.html.erb:45: `$(' is not allowed as a global variable name
+app/views/main/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:09:55 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.7ms)
+  Rendered projects/desktop/_focus.html.erb (7.8ms)
+  Rendered projects/mobile/_focus.html.erb (3.6ms)
+  Rendered layouts/_title.html.erb (7.8ms)
+  Rendered layouts/_about.html.erb (0.8ms)
+  Rendered layouts/_portfolio.html.erb (2.6ms)
+  Rendered layouts/_contact.html.erb (0.7ms)
+  Rendered game/_letter_area.html.erb (2.2ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.2ms)
+  Rendered main/index.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:10:01 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/nums/portfolio/app/views/main/index.html.erb:38: syntax error, unexpected '<'
+<!-- JAVASCRIPT ---------------
+ ^
+/home/nums/portfolio/app/views/main/index.html.erb:38: syntax error, unexpected unary-, expecting keyword_do or '{' or '('
+<!-- JAVASCRIPT -------------------------------
+                 ^
+/home/nums/portfolio/app/views/main/index.html.erb:38: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+/home/nums/portfolio/app/views/main/index.html.erb:42: target of repeat operator is not specified: /*Beginning Animation----------------------------*/
+/home/nums/portfolio/app/views/main/index.html.erb:44: unknown regexp options - Hd
+/home/nums/portfolio/app/views/main/index.html.erb:44: syntax error, unexpected tCONSTANT, expecting ')'
+	//Hide Nav bar and buttons
+	          ^
+/home/nums/portfolio/app/views/main/index.html.erb:45: `$(' is not allowed as a global variable name
+/home/nums/portfolio/app/views/main/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+	$(".navbar-nav").hide();
+	 ^):
+  
+app/views/main/index.html.erb:38: syntax error, unexpected '<'
+app/views/main/index.html.erb:38: syntax error, unexpected unary-, expecting keyword_do or '{' or '('
+app/views/main/index.html.erb:38: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/main/index.html.erb:42: target of repeat operator is not specified: /*Beginning Animation----------------------------*/
+app/views/main/index.html.erb:44: unknown regexp options - Hd
+app/views/main/index.html.erb:44: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/main/index.html.erb:45: `$(' is not allowed as a global variable name
+app/views/main/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:10:17 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.5ms)
+  Rendered projects/desktop/_focus.html.erb (5.6ms)
+  Rendered projects/mobile/_focus.html.erb (1.9ms)
+  Rendered layouts/_title.html.erb (3.5ms)
+  Rendered layouts/_about.html.erb (0.4ms)
+  Rendered layouts/_portfolio.html.erb (1.1ms)
+  Rendered game/_letter_area.html.erb (1.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered main/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:11:00 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.8ms)
+  Rendered projects/desktop/_focus.html.erb (7.2ms)
+  Rendered projects/mobile/_focus.html.erb (3.4ms)
+  Rendered layouts/_title.html.erb (7.0ms)
+  Rendered layouts/_about.html.erb (0.7ms)
+  Rendered layouts/_portfolio.html.erb (2.2ms)
+  Rendered game/_letter_area.html.erb (2.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.2ms)
+  Rendered game/_letter_area.html.erb (0.2ms)
+  Rendered game/_letter_area.html.erb (0.2ms)
+  Rendered main/index.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 81ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:12:32 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.8ms)
+  Rendered projects/desktop/_focus.html.erb (9.0ms)
+  Rendered projects/mobile/_focus.html.erb (5.0ms)
+  Rendered layouts/_title.html.erb (6.9ms)
+  Rendered layouts/_about.html.erb (0.7ms)
+  Rendered layouts/_portfolio.html.erb (2.2ms)
+  Rendered game/_letter_area.html.erb (2.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.2ms)
+  Rendered main/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:13:27 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.6ms)
+  Rendered projects/desktop/_focus.html.erb (8.3ms)
+  Rendered projects/mobile/_focus.html.erb (5.5ms)
+  Rendered layouts/_title.html.erb (8.2ms)
+  Rendered layouts/_about.html.erb (0.7ms)
+  Rendered layouts/_portfolio.html.erb (2.7ms)
+  Rendered game/_letter_area.html.erb (2.4ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered main/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 87ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-20 11:14:34 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered game/_main.html.erb (0.6ms)
+  Rendered projects/desktop/_focus.html.erb (7.9ms)
+  Rendered projects/mobile/_focus.html.erb (4.0ms)
+  Rendered layouts/_title.html.erb (7.8ms)
+  Rendered layouts/_about.html.erb (1.1ms)
+  Rendered layouts/_portfolio.html.erb (2.5ms)
+  Rendered game/_letter_area.html.erb (2.4ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered game/_letter_area.html.erb (0.1ms)
+  Rendered main/index.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 86ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
